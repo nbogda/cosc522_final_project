@@ -1,7 +1,7 @@
 Repository for the final project in COSC 522
 ============================================
 
-##Contributors: Natalie Bogda, Tuhin Subhra Das, and Charles Rizzo
+## Contributors: Natalie Bogda, Tuhin Subhra Das, and Charles Rizzo
 
 Project Goal
 ===============
@@ -13,13 +13,13 @@ Project Goal
 Methods
 ============
 
-##We will be experimenting with the following methods
+## We will be experimenting with the following methods
 
-###Data Preprocessing
+### Data Preprocessing
 * Data normalization
 * Dimensionality reduction (FLD, PCA)
 
-###Classification, both supervised and unsupervised
+### Classification, both supervised and unsupervised
 * Maximum Posterior Probability (Case 1, 2, and 3)
 * kNN 
 * Neural Network with backpropagation
@@ -27,10 +27,10 @@ Methods
 * SVMs
 * Clustering (kmeans, WTA, kohonen, or mean shift)
 
-###Ensemble techniques
+### Ensemble techniques
 * Classifier fusion
 
-###Evaluation
+### Evaluation
 * k-fold cross validation
 * confusion matrix
 * ROC curve, F1 score
