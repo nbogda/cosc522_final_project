@@ -5,14 +5,12 @@ import pandas as pd
 class Data:
 
     def __init__(self, data_path):
-
         self.train = pd.read_csv("%s/TrainingDataset.csv" % data_path)
         self.test = pd.read_csv("%s/TestDataset.csv" % data_path)
         self.train_rows, self.train_columns = self.train.shape
 
-    #median imputation is for categorical variables
+    #remove NaNs from dataset
     def clean_nans(self):
-
         #replace NaN in Outcome_ with 0 
         self.train.loc[:, self.train.columns.str.startswith('Outcome_')] = self.train.loc[:, self.train.columns.str.startswith('Outcome_')].fillna(0)
 
@@ -48,9 +46,8 @@ class Data:
                 self.train.drop(cat_names[i], axis=1, inplace=True)
                 self.test.drop(cat_names[i], axis=1, inplace=True)
 
-    
+    #normalize dataset
     def normalize_data(self):
-            
         col_names = list(self.train.columns)
         #removing outcomes, dont normalize those
         col_names[:] = [x for x in col_names if "Outcome" not in x]
@@ -60,7 +57,12 @@ class Data:
             self.train[col_names[i]] = (self.train[col_names[i]] - mean)/std
             self.test[col_names[i]] = (self.test[col_names[i]] - mean)/std
     
-    
+
+    #write data to csv file to be nice 
+    def write_to_csv(self, version): 
+        self.train.to_csv("../data/training_set_%s.csv" % version)
+        self.test.to_csv("../data/test_set_%s.csv" % version)
+
 
 
 if __name__ == "__main__":
@@ -69,3 +71,4 @@ if __name__ == "__main__":
     data = Data("../data")
     data.clean_nans()
     data.normalize_data()
+    data.write_to_csv("V1")
