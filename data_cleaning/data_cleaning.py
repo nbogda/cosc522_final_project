@@ -1,5 +1,8 @@
 import os
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import sys
 
 #class to read in and clean data
 class Data:
@@ -56,8 +59,37 @@ class Data:
             std = self.train[col_names[i]].std()
             self.train[col_names[i]] = (self.train[col_names[i]] - mean)/std
             self.test[col_names[i]] = (self.test[col_names[i]] - mean)/std
-    
+   
+    #to see the distribution of the outcomes
+    def plot_counts(self):
+        col_names = list(self.train.loc[:, self.train.columns.str.startswith('Outcome_')])
+        for i in range(0, len(col_names)):
+            curr = np.array(list(self.train[col_names[i]]))
+            outcome_dict = {}
+            for c in curr:
+                if c not in outcome_dict:
+                    outcome_dict[c] = 1
+                else:
+                    outcome_dict[c] += 1
+            keys = sorted(outcome_dict.keys())
+            values = [outcome_dict[k] for k in keys]
+            y_pos = np.arange(len(keys))
+            plt.figure(figsize=(20, 10))
+            plt.bar(y_pos, values)
+            plt.xticks(y_pos, keys, rotation=90)
+            plt.ylabel("Outcomes")
+            plt.title(col_names[i])
+            plt.savefig("%s.png" % col_names[i]) 
 
+    #make the monetary values into class values
+    def split_into_bins(self):
+        bins = [0, 2000, 5000, 15000, 50000, 100000, sys.maxsize]
+        labels = [1, 2, 3, 4, 5, 6]
+        col_names = list(self.train.loc[:, self.train.columns.str.startswith('Outcome_')])
+        for c in col_names:
+            self.train[c] = pd.cut(self.train[c], bins=bins, labels=labels)
+
+    
     #write data to csv file to be nice 
     def write_to_csv(self, version): 
         self.train.to_csv("../data/training_set_%s.csv" % version)
@@ -71,4 +103,6 @@ if __name__ == "__main__":
     data = Data("../data")
     data.clean_nans()
     data.normalize_data()
-    data.write_to_csv("V1")
+    #data.plot_counts()
+    data.split_into_bins()
+    data.write_to_csv("V2")
