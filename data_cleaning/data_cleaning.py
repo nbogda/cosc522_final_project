@@ -49,6 +49,10 @@ class Data:
                 self.train.drop(cat_names[i], axis=1, inplace=True)
                 self.test.drop(cat_names[i], axis=1, inplace=True)
 
+        #cover everything else
+        self.train = self.train.replace(np.nan, 0)
+        self.test = self.test.replace(np.nan, 0)
+
     #normalize dataset
     def normalize_data(self):
         col_names = list(self.train.columns)
@@ -104,5 +108,5 @@ if __name__ == "__main__":
     data.clean_nans()
     data.normalize_data()
     #data.plot_counts()
-    data.split_into_bins()
-    data.write_to_csv("V2")
+    #data.split_into_bins()
+    data.write_to_csv("V1")
