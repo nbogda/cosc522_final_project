@@ -96,6 +96,8 @@ class Data:
     
     #write data to csv file to be nice 
     def write_to_csv(self, version): 
+        print(self.train.shape)
+        print(self.test.shape)
         self.train.to_csv("../data/training_set_%s.csv" % version)
         self.test.to_csv("../data/test_set_%s.csv" % version)
 
