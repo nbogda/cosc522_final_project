@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import sys
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.model_selection import train_test_split
@@ -18,7 +19,7 @@ def convert_to_csv(x, y, _set):
 
 if __name__ == "__main__":
 
-    train = pd.read_csv("../data/training_set_V1.csv")
+    train = pd.read_csv("../data/useless_data/training_set_V1.csv")
     col_names = list(train.columns)
     row, columns = train.shape
     
@@ -34,6 +35,7 @@ if __name__ == "__main__":
     #we don't have ground truth for the test set yet so we will need to use our training data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
 
+    sys.exit(0)
     #create PCA object
     pca = PCA()
     X_train = pca.fit_transform(X_train)

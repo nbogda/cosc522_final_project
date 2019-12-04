@@ -106,7 +106,7 @@ class Data:
 if __name__ == "__main__":
 
     #directory that data is located in
-    data = Data("../data")
+    data = Data("../data/useless_data")
     data.clean_nans()
     data.normalize_data()
     #data.plot_counts()
