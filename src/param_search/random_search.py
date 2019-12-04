@@ -46,10 +46,10 @@ def get_params(algorithm):
     returns dict of params
     '''
     if algorithm == "kNN":
-        return { 'n_neighbors' : np.arange(0, 100, 5),
+        return { 'n_neighbors' : np.arange(1, 100, 5),
                  'p' : [1, 2, 3] } #different orders of minkowski distance. 1=manhattan, 2=euclidean
     elif algorithm == "MLP": #multi-layer perceptron....not "my little pony"
-        return { 'hidden_layer_sizes' = [(10,) (10, 10), (50, 50, 50)], #expand this later
+        return { 'hidden_layer_sizes' : [(10,) (10, 10), (50, 50, 50)], #expand this later
                  'alpha' : [0.0001, 0.01, 1, 5, 10]}
     elif algorithm == "Decision Tree":
         return { 'criterion' : ["mse", "friedman_mse", "mae"],
@@ -69,13 +69,40 @@ def get_params(algorithm):
                  'min_samples_leaf' : [1, 2, 3, 4] }
 
 
-def random_search(algorithm):
+def random_search(algorithm, params, X, y, iters=20):
     '''
     Testing the following algs: 
 
-        kNN, BPNN/MLP, Decision Tree, Random Forest, SVM, Linear Reg(?)
+        kNN, BPNN/MLP, Decision Tree, Random Forest, SVM
     '''
-    print("")
+    clf = None
+    if algorithm == "kNN":
+        clf = KNeighborsRegressor()
+    elif algorithm == "MLP":
+        clf = MLPRegressor()
+    elif algorithm == "Decision Tree":
+        clf = DecisionTreeRegressor()
+    elif algorithm == "SVM":
+        clf = SVR()
+    elif algorithm == "Random Forest":
+        clf = RandomForestRegressor()
+
+    random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=5, 
+                                       scoring='neg_mean_squared_log_error', verbose=2)
+    random_search.fit(X, y)
+    report(random_search.cv_results_)
+
+def report(results, n_top=3):
+    for i in range(1, n_top + 1):
+        candidates = np.flatnonzero(results['rank_test_score'] == i)
+        for candidate in candidates:
+            print("Model with rank: {0}".format(i))
+            print("Mean validation score: {0:.3f} (std: {1:.3f})"
+                  .format(results['mean_test_score'][candidate],
+                          results['std_test_score'][candidate]))
+            print("Parameters: {0}".format(results['params'][candidate]))
+            print("")
+
 
 if __name__ == "__main__":
 
@@ -83,5 +110,5 @@ if __name__ == "__main__":
     
     algorithm = "kNN"
     param_dict = get_params(algorithm)
-    print(param_dict)
+    random_search(algorithm, param_dict, X_tr, y_tr)
 
