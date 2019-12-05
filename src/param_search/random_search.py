@@ -24,20 +24,19 @@ def read_CSV():
     test = pd.read_csv("../../data/PCA_split_data_test.csv")
  
     #split data into "labels" and predictors (The actual training set was split 70-30 since the testing set has no outcomes)
-    X_tr = [] #predictors training
-    y_tr = [] #predictions training
-    X_test = [] #features testing
-    y_test = [] #predicitions testing
+    X = [] #predictors training
+    y = [] #predictions training
     
     for index, row in train.iterrows():
-        y_tr.append(list(row.ix[1:13]))
-        X_tr.append(list(row.ix[13:]))
+        y.append(list(row.ix[1:13]))
+        X.append(list(row.ix[13:]))
         
     for index, row in test.iterrows():
-        y_test.append(list(row.ix[1:13]))
-        X_test.append(list(row.ix[13:]))
+        y.append(list(row.ix[1:13]))
+        X.append(list(row.ix[13:]))
         
-    return X_tr,y_tr,X_test,y_test
+    #just gonna have one big test set for the random search
+    return X, y
 
 def get_params(algorithm):
     '''
@@ -97,8 +96,8 @@ def report(results, n_top=3):
         candidates = np.flatnonzero(results['rank_test_score'] == i)
         for candidate in candidates:
             print("Model with rank: {0}".format(i))
-            print("Mean validation score: {0:.3f} (std: {1:.3f})"
-                  .format(results['mean_test_score'][candidate],
+            print("Mean RMSLE: {0:.3f} (std: {1:.3f})"
+                  .format(np.sqrt(np.abs(results['mean_test_score'][candidate])),
                           results['std_test_score'][candidate]))
             print("Parameters: {0}".format(results['params'][candidate]))
             print("")
@@ -106,9 +105,15 @@ def report(results, n_top=3):
 
 if __name__ == "__main__":
 
-    X_tr,y_tr,X_test,y_test = read_CSV()
-    
+    X, y = read_CSV()
+
+    #change the algorithm here
+    #choose from: kNN, MLP, Decision Tree, SVM, Random Forest
     algorithm = "kNN"
+    
+    #this is where the params to test are stored
     param_dict = get_params(algorithm)
-    random_search(algorithm, param_dict, X_tr, y_tr)
+
+    #this where the actual searching happens
+    random_search(algorithm, param_dict, X, y)
 
