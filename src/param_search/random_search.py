@@ -40,7 +40,7 @@ def read_CSV(clean_method, preprocessing):
     train = pd.read_csv("../../data/NAN_%s/%s_split_data_train.csv" % (file_paths[clean_method], file_name[preprocessing]))
     test = pd.read_csv("../../data/NAN_%s/%s_split_data_test.csv" % (file_paths[clean_method], file_name[preprocessing]))
  
-    #split data into "labels" and predictors (The actual training set was split 70-30 since the testing set has no outcomes)
+    #split data into predictions and predictors
     X = [] #predictors training
     y = [] #predictions training
     
@@ -52,7 +52,7 @@ def read_CSV(clean_method, preprocessing):
         y.append(list(row.ix[1:13]))
         X.append(list(row.ix[13:]))
         
-    #just gonna have one big test set for the random search
+    #just gonna have one big test set for the random search, it does fold CV anyway
     return X, y
 
 def get_params(algorithm):
@@ -64,19 +64,19 @@ def get_params(algorithm):
     if algorithm == "kNN":
         return { 'n_neighbors' : np.arange(1, 100, 5),
                  'p' : [1, 2, 3] } #different orders of minkowski distance. 1=manhattan, 2=euclidean
-    elif algorithm == "MLP": #multi-layer perceptron....not "my little pony"
-        return { 'hidden_layer_sizes' : [(10,) (10, 10), (50, 50, 50)], #expand this later
-                 'alpha' : [0.0001, 0.01, 1, 5, 10]}
+    elif algorithm == "MLP": #broke
+        return { 'hidden_layer_sizes' : [(10, 10,)], #expand this later
+                 'alpha' : [0.01, 1, 5, 10]}
     elif algorithm == "Decision Tree":
         return { 'criterion' : ["mse", "friedman_mse", "mae"],
                  'max_depth' : [None, 5, 10, 20],
                  'min_samples_split' : [2, 4, 6, 8],
                  'min_samples_leaf' : [1, 2, 3, 4] }
     elif algorithm == "SVM":
-        return { 'kernel' : ['rbf', 'sigmoid'],
-                 'gamma' : ['scale', 'auto'],
-                 'C' : [0, 0.1, 1, 5, 10],
-                 'epsilon' : [0, 0,1, 1, 5, 10] }
+        return { 'estimator__kernel' : ['rbf', 'sigmoid'],
+                 'estimator__gamma' : ['scale', 'auto'],
+                 'estimator__C' : [0, 0.1, 1, 5, 10],
+                 'estimator__epsilon' : [0, 0,1, 1, 5, 10] }
     elif algorithm == "Random Forest":
         return { 'n_estimators' : [10, 50, 100, 200, 500],
                  'criterion' : ["mse", "friedman_mse", "mae"],
@@ -100,6 +100,7 @@ def random_search(algorithm, params, X, y, iters=20):
         clf = DecisionTreeRegressor()
     elif algorithm == "SVM":
         clf = SVR()
+        clf = MultiOutputRegressor(clf)
     elif algorithm == "Random Forest":
         clf = RandomForestRegressor()
 
@@ -114,6 +115,8 @@ def report(results, n_top=3):
         candidates = np.flatnonzero(results['rank_test_score'] == i)
         for candidate in candidates:
             print("Model with rank: {0}".format(i))
+
+            #except this part, this is the RMSLE score
             print("Mean RMSLE: {0:.3f} (std: {1:.3f})"
                   .format(np.sqrt(np.abs(results['mean_test_score'][candidate])),
                           results['std_test_score'][candidate]))
@@ -136,15 +139,22 @@ if __name__ == "__main__":
     clean_method = 0
     preprocessing = 0
 
+    #read data from one of 6 datasets
     X, y = read_CSV(clean_method, preprocessing)
 
-    #change the algorithm here
-    #choose from: kNN, MLP, Decision Tree, SVM, Random Forest
-    algorithm = "kNN"
+    '''
+    algorithm : string
+                - kNN
+                - MLP ----------- (Problem, making negative predictions, cant do RMSLE)
+                - Decision Tree
+                - SVM ----------- (Also making negative predictions) 
+                - Random Forest
+    '''
+    algorithm = "Random Forest"
     
     #this is where the params to test are stored
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-    random_search(algorithm, param_dict, X, y)
+    random_search(algorithm, param_dict, X, y, iters=20)
 
