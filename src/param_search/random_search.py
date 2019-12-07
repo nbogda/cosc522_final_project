@@ -19,9 +19,26 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV
 
 #function to read in the CSV files
-def read_CSV():
-    train = pd.read_csv("../../data/PCA_split_data_train.csv")
-    test = pd.read_csv("../../data/PCA_split_data_test.csv")
+def read_CSV(clean_method, preprocessing):
+    '''
+    clean_method : integer
+                   0 - deleted
+                   1 - mean
+                   2 - to_0
+    
+    preprocessing : integer
+                    0 - ORIGINAL
+                    1 - PCA
+    '''
+    
+    file_paths = ["deleted", "mean", "to_0"]
+    file_name = ["ORIGINAL", "PCA"]
+
+    #print statement for my sanity
+    print("\nYou have selected NaN %s, with %s data\n" % (file_paths[clean_method], file_name[preprocessing]))
+
+    train = pd.read_csv("../../data/NAN_%s/%s_split_data_train.csv" % (file_paths[clean_method], file_name[preprocessing]))
+    test = pd.read_csv("../../data/NAN_%s/%s_split_data_test.csv" % (file_paths[clean_method], file_name[preprocessing]))
  
     #split data into "labels" and predictors (The actual training set was split 70-30 since the testing set has no outcomes)
     X = [] #predictors training
@@ -91,6 +108,7 @@ def random_search(algorithm, params, X, y, iters=20):
     random_search.fit(X, y)
     report(random_search.cv_results_)
 
+#stolen shamelessly off the internet
 def report(results, n_top=3):
     for i in range(1, n_top + 1):
         candidates = np.flatnonzero(results['rank_test_score'] == i)
@@ -104,8 +122,21 @@ def report(results, n_top=3):
 
 
 if __name__ == "__main__":
+ 
+    '''
+    clean_method : integer
+                   0 - deleted
+                   1 - mean
+                   2 - to_0
+    
+    preprocessing : integer
+                    0 - ORIGINAL
+                    1 - PCA
+    '''
+    clean_method = 0
+    preprocessing = 0
 
-    X, y = read_CSV()
+    X, y = read_CSV(clean_method, preprocessing)
 
     #change the algorithm here
     #choose from: kNN, MLP, Decision Tree, SVM, Random Forest
