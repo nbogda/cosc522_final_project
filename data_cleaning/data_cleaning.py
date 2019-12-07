@@ -3,17 +3,24 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
+from mlxtend.preprocessing import minmax_scaling
 
 #class to read in and clean data
 class Data:
 
     def __init__(self, data_path):
         self.train = pd.read_csv("%s/TrainingDataset.csv" % data_path)
-        self.train_rows, self.train_columns = self.train.shape
-        print(self.train.shape)
+        print("Shape before cleaning:" + str(self.train.shape))
 
     #remove NaNs from dataset
     def clean_nans(self, type_fill):
+        '''
+        type_fill : integer
+                    0 - fill all NA with 0
+                    1 - drop column with NA
+                    2 - mean imputation
+        '''
+        self.type_fill = type_fill
         #replace NaN in Outcome_ with 0 
         self.train.loc[:, self.train.columns.str.startswith('Outcome_')] = self.train.loc[:, self.train.columns.str.startswith('Outcome_')].fillna(0)
 
@@ -22,23 +29,25 @@ class Data:
         quan_names = list(self.train.loc[:, self.train.columns.str.startswith('Quan_')])
         quan_nulls = self.train.loc[:, quan_names].isnull().sum(axis=0)
         #if more than 60% are null, ICE THAT COLUMN in both train and test
-        quan_nulls /= self.train_rows
+        quan_nulls /= self.train.shape[0]
         for i in range(0, len(quan_nulls)):
             #more than 60% is NaN
             if quan_nulls[i] > 0.6:
-                continue
-                #self.train.drop(quan_names[i], axis=1, inplace=True)
+                if self.type_fill != 2:
+                    continue
+                else:
+                    self.train.drop(quan_names[i], axis=1, inplace=True)
             else:
                 mean = self.train[quan_names[i]].mean()
                 #drop columns with all 0s
                 if mean == 0:
                     self.train.drop(quan_names[i], axis=1, inplace=True)
-                #else:
-                    #self.train[quan_names[i]] = self.train[quan_names[i]].fillna(mean)
+                elif mean != 0 and self.type_fill == 2:
+                    self.train[quan_names[i]] = self.train[quan_names[i]].fillna(mean)
 
         #fix date columns with NaNs by setting to 0
-        #self.train.loc[:, self.train.columns.str.startswith('Date_')] = self.train.loc[:, self.train.columns.str.startswith('Date_')].fillna(0)
-        
+        if self.type_fill == 2:
+            self.train.loc[:, self.train.columns.str.startswith('Date_')] = self.train.loc[:, self.train.columns.str.startswith('Date_')].fillna(0)
 
         #checking categorical columns to make sure there is some variance in the column
         cat_names = list(self.train.loc[:, self.train.columns.str.startswith("Cat_")])
@@ -47,20 +56,25 @@ class Data:
             if self.train[cat_names[i]].nunique() == 1:
                 self.train.drop(cat_names[i], axis=1, inplace=True)
         
-        if type_fill == 0:
+        if self.type_fill == 0 or self.type_fill == 2:
             self.train = self.train.fillna(0)
-        elif type_fill == 1:
+        elif self.type_fill == 1:
             self.train = self.train.dropna(axis=1)
 
-    #normalize dataset
-    def normalize_data(self):
+    #scale data with min/max scaling
+    def scale_data(self):
         col_names = list(self.train.columns)
-        #removing outcomes, dont normalize those
-        col_names[:] = [x for x in col_names if "Outcome" not in x]
-        for i in range(0, len(col_names)):
-            mean = self.train[col_names[i]].mean()
-            std = self.train[col_names[i]].std()
-            self.train[col_names[i]] = (self.train[col_names[i]] - mean)/std
+        predictor_names = [x for x in col_names if "Outcome" not in x]
+        self.train[predictor_names] = minmax_scaling(self.train, columns = predictor_names)
+        
+        outcomes = [x for x in col_names if "Outcome" in x]
+        feature_range = []
+        #saving the min and max values per column before standardizing
+        for o in outcomes:
+            feature_range.append([min(self.train[o]), max(self.train[o])])
+        #save min max in numpy file for future use (to invert the transform)
+        np.save("12_outcomes_feature_range_min_max.npy", np.array(feature_range))
+        self.train[outcomes] = minmax_scaling(self.train, columns = outcomes)
    
     #to see the distribution of the outcomes
     def plot_counts(self):
@@ -83,6 +97,9 @@ class Data:
             plt.title(col_names[i])
             plt.savefig("%s.png" % col_names[i]) 
 
+    '''
+    WE ARE NOT GOING DOWN THIS SILLY ROUTE
+
     #make the monetary values into class values
     def split_into_bins(self):
         bins = [0, 2000, 5000, 15000, 50000, 100000, sys.maxsize]
@@ -90,12 +107,13 @@ class Data:
         col_names = list(self.train.loc[:, self.train.columns.str.startswith('Outcome_')])
         for c in col_names:
             self.train[c] = pd.cut(self.train[c], bins=bins, labels=labels)
-
+    '''
     
     #write data to csv file to be nice 
-    def write_to_csv(self, version): 
-        print(self.train.shape)
-        self.train.to_csv("../data/cleaned_data/nan_%s.csv" % version)
+    def write_to_csv(self): 
+        print("Shape after cleaning:" + str(self.train.shape))
+        file_name = ["to_0", "deleted", "mean"]
+        self.train.to_csv("../data/cleaned_data/nan_%s.csv" % file_name[self.type_fill])
 
 
 
@@ -103,8 +121,12 @@ if __name__ == "__main__":
 
     #directory that data is located in
     data = Data("../data")
-    data.clean_nans(0)
-    data.normalize_data()
+    
+    # 0 - convert NaN to 0
+    # 1 - ruthlessly drop NaN
+    # 2 - mean imputation, NaN over 60% dropped
+    type_fill = 2
+    data.clean_nans(type_fill)
+    data.scale_data()
     #data.plot_counts()
-    #data.split_into_bins()
-    data.write_to_csv("to_0")
+    data.write_to_csv()
