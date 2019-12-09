@@ -13,7 +13,7 @@ for a in algorithms:
             name = "Best %s %s %s" % (a, n, p)
             row_names.append(name)
 
-col_names = ["Best Params", "Mean RMSLE"]
+col_names = ["Best Params", "Mean RMSLE", "Refit Time"]
 
 df = pd.DataFrame(None, index=[row_names], columns=col_names)
 df.to_csv("saved_models/Random_Search_Info.csv")

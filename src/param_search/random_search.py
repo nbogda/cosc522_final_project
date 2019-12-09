@@ -79,7 +79,7 @@ def get_params(algorithm):
                  'min_samples_leaf' : [1, 2, 3, 4] }
 
 
-def random_search(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
+def random_search_(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
     '''
     Testing the following algs: 
 
@@ -113,9 +113,11 @@ def random_search(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
     #write info about the model
     info = pd.read_csv("saved_models/Random_Search_Info.csv", index_col=0)
     best_params = random_search.best_params_
+    fit_time = random_search.refit_time_ #NEW
     best_score = np.sqrt(np.abs(random_search.best_score_))
     info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Best Params"] = str(best_params)
     info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Mean RMSLE"] = "%.4f" % best_score
+    info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Refit Time"] = "%.4f" % fit_time #NEW
     print(info)
     info.to_csv("saved_models/Random_Search_Info.csv")
 
@@ -167,5 +169,5 @@ if __name__ == "__main__":
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-    random_search(algorithm, param_dict, X, y, clean_method, preprocessing, iters=5, jobs=10)
+    random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=5, jobs=10)
 
