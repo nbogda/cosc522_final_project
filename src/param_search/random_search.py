@@ -17,6 +17,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.externals import joblib
+from itertools import combinations, combinations_with_replacement
+
 
 #function to read in the CSV files
 def read_CSV(clean_method, preprocessing):
@@ -59,15 +61,16 @@ def get_params(algorithm):
         return { 'n_neighbors' : np.arange(1, 100, 5),
                  'p' : [1, 2, 3] } #different orders of minkowski distance. 1=manhattan, 2=euclidean
     elif algorithm == "MLP": 
-        return { 'hidden_layer_sizes' : [(10, 10,), (10,), (20, 20, 20,)], #expand this later
+        hidden_layers = MLP_structure()
+        return { 'hidden_layer_sizes' : hidden_layers, #expand this later
                  'alpha' : [0.01, 1, 5, 10],
-                 'learning_rate_init' = [0.001, 0.01, 0.1, 1, 5],
-                 'batch_size' = [1, 10, 30, 200]}
+                 'learning_rate_init' : [0.001, 0.01, 0.1, 1, 5],
+                 'batch_size' : [1, 10, 30, 200]}
     elif algorithm == "Decision Tree":
         return { 'criterion' : ["mse", "friedman_mse", "mae"],
                  'min_samples_split' : [2, 4, 6, 8],
                  'min_samples_leaf' : [1, 2, 3, 4],
-                 'max_features' = ["auto", "sqrt", "log2"] }
+                 'max_features' : ["auto", "sqrt", "log2"] }
     elif algorithm == "SVM":
         return { 'estimator__kernel' : ['rbf', 'sigmoid', 'poly'],
                  'estimator__gamma' : ['scale', 'auto'],
@@ -78,8 +81,19 @@ def get_params(algorithm):
                  'criterion' : ["mse", "friedman_mse", "mae"],
                  'min_samples_split' : [2, 4, 6, 8],
                  'min_samples_leaf' : [1, 2, 3, 4],
-                 'max_features' = ["auto", "sqrt", "log2"] }
+                 'max_features' : ["auto", "sqrt", "log2"] }
 
+def MLP_structure():
+
+    hidden_layers = [1, 3, 5]
+    hidden_neurons = [5, 10, 20]
+    structure = []
+
+    for layer in hidden_layers:
+        neuron_layer = list(combinations_with_replacement(hidden_neurons, layer))
+        structure += tuple(neuron_layer)
+
+    return structure
 
 def random_search_(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
     '''
@@ -166,7 +180,7 @@ if __name__ == "__main__":
                 - SVM  
                 - Random Forest
     '''
-    algorithm = "kNN"
+    algorithm = "MLP"
     
     #this is where the params to test are stored
     param_dict = get_params(algorithm)
