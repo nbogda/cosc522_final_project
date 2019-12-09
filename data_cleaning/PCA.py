@@ -20,7 +20,10 @@ def convert_to_csv(x, y, col_name, _set, data):
 
 if __name__ == "__main__":
 
+    #choose from "mean", "to_0", or "deleted"
     data = "mean"
+
+
     train = pd.read_csv("../data/cleaned_data/nan_%s.csv" % data)
     col_names = list(train.columns)
     row, columns = train.shape
@@ -30,8 +33,8 @@ if __name__ == "__main__":
     y = [] #predictions
 
     for index, row in train.iterrows():
-        y.append(list(row.ix[1:13]))
-        X.append(list(row.ix[13:]))
+        y.append(list(row.iloc[1:13]))
+        X.append(list(row.iloc[13:]))
     
     #splitting this so we can test our results
     #we don't have ground truth for the test set yet so we will need to use our training data
