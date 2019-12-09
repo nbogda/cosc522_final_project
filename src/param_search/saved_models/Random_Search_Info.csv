@@ -8,7 +8,7 @@ Best kNN PCA to_0,,,
 Best MLP ORIGINAL deleted,,,
 Best MLP ORIGINAL mean,,,
 Best MLP ORIGINAL to_0,,,
-Best MLP PCA deleted,,,
+Best MLP PCA deleted,"{'learning_rate_init': 0.01, 'hidden_layer_sizes': (10, 10, 10, 10, 20), 'batch_size': 10, 'alpha': 10}",1.1764,0.3077
 Best MLP PCA mean,,,
 Best MLP PCA to_0,,,
 Best Decision Tree ORIGINAL deleted,,,
