@@ -175,8 +175,10 @@ if __name__ == "__main__":
                     0 - ORIGINAL
                     1 - PCA
     '''
-    clean_method = 0
-    preprocessing = 1
+    print(sys.argv)
+    jobNo = int(sys.argv[1])     #For cluster
+    clean_method = jobs[jobNo][1]  #For cluster
+    preprocessing = jobs[jobNo][2]  #For cluster
 
     #read data from one of 6 datasets
     X, y = read_CSV(clean_method, preprocessing)
@@ -189,11 +191,11 @@ if __name__ == "__main__":
                 - SVM  
                 - Random Forest
     '''
-    algorithm = "MLP"
+    algorithm = jobs[jobNo][0]   #"MLP"
     
     #this is where the params to test are stored
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-    random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=50, jobs=10)
-
+   # random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=50, jobs=45)
+    print("Testing search with job params. Alg: %s, Clean Method: %d, Preprocessing: %d" %(jobs[jobNo][0],jobs[jobNo][1],jobs[jobNo][2]))

@@ -3,7 +3,7 @@
 #SBATCH --job-name=finalProject
 #SBATCH --output=finalProject_%A_%a.out
 #SBATCH --error=finalProject_%A_%a.err
-#SBATCH --array=1-36
+#SBATCH --array=1-30
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=45
 
@@ -11,4 +11,4 @@
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 
 # Add lines here to run your computations.
-python3 random_search.py $SLURM_ARRAY_TASK_ID
+python random_search.py $SLURM_ARRAY_TASK_ID
