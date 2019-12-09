@@ -2,7 +2,7 @@
 Best kNN ORIGINAL deleted,,,
 Best kNN ORIGINAL mean,,,
 Best kNN ORIGINAL to_0,,,
-Best kNN PCA deleted,,,
+Best kNN PCA deleted,"{'p': 2, 'n_neighbors': 11}",0.9908,0.0081
 Best kNN PCA mean,,,
 Best kNN PCA to_0,,,
 Best MLP ORIGINAL deleted,,,
