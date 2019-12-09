@@ -1,10 +1,10 @@
 ,Best Params,Mean RMSLE
-Best kNN ORIGINAL deleted,"{'p': 1, 'n_neighbors': 41}",1.0269
-Best kNN ORIGINAL mean,,
-Best kNN ORIGINAL to_0,,
-Best kNN PCA deleted,,
-Best kNN PCA mean,,
-Best kNN PCA to_0,,
+Best kNN ORIGINAL deleted,"{'p': 2, 'n_neighbors': 41}",1.0279
+Best kNN ORIGINAL mean,"{'p': 2, 'n_neighbors': 31}",1.0075
+Best kNN ORIGINAL to_0,"{'p': 1, 'n_neighbors': 21}",0.9387
+Best kNN PCA deleted,"{'p': 2, 'n_neighbors': 6}",0.9727
+Best kNN PCA mean,"{'p': 3, 'n_neighbors': 41}",1.0273
+Best kNN PCA to_0,"{'p': 2, 'n_neighbors': 11}",0.9413
 Best MLP ORIGINAL deleted,"{'hidden_layer_sizes': (20, 20, 20), 'alpha': 5}",1.2731
 Best MLP ORIGINAL mean,,
 Best MLP ORIGINAL to_0,,

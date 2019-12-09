@@ -147,8 +147,8 @@ if __name__ == "__main__":
                     0 - ORIGINAL
                     1 - PCA
     '''
-    clean_method = 1
-    preprocessing = 0
+    clean_method = 0
+    preprocessing = 1
 
     #read data from one of 6 datasets
     X, y = read_CSV(clean_method, preprocessing)
@@ -167,5 +167,5 @@ if __name__ == "__main__":
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-    random_search(algorithm, param_dict, X, y, clean_method, preprocessing, iters=5, jobs=5)
+    random_search(algorithm, param_dict, X, y, clean_method, preprocessing, iters=5, jobs=10)
 
