@@ -99,7 +99,7 @@ def random_search(algorithm, params, X, y, iters=20):
     elif algorithm == "Random Forest":
         clf = RandomForestRegressor()
 
-    random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=5, 
+    random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=10, 
                                        scoring='neg_mean_squared_log_error', verbose=2)
     random_search.fit(X, y)
     report(random_search.cv_results_)
@@ -131,8 +131,8 @@ if __name__ == "__main__":
                     0 - ORIGINAL
                     1 - PCA
     '''
-    clean_method = 0
-    preprocessing = 0
+    clean_method = 1
+    preprocessing = 1
 
     #read data from one of 6 datasets
     X, y = read_CSV(clean_method, preprocessing)
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                 - SVM ----------- (Also making negative predictions) 
                 - Random Forest
     '''
-    algorithm = "Random Forest"
+    algorithm = "MLP"
     
     #this is where the params to test are stored
     param_dict = get_params(algorithm)
