@@ -12,7 +12,6 @@ from sklearn.svm import SVR
 from sklearn.neural_network import MLPRegressor
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_log_error
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
@@ -44,8 +43,8 @@ def read_CSV(clean_method, preprocessing):
     y = [] #predictions training
     
     for index, row in train.iterrows():
-        y.append(list(row.ix[1:13]))
-        X.append(list(row.ix[13:]))
+        y.append(list(row.iloc[1:13]))
+        X.append(list(row.iloc[13:]))
         
     #just gonna have one big test set for the random search, it does fold CV anyway
     return X, y
@@ -69,8 +68,8 @@ def get_params(algorithm):
                  'min_samples_leaf' : [1, 2, 3, 4] }
     elif algorithm == "SVM":
         return { 'estimator__kernel' : ['rbf', 'sigmoid'],
-                 'estimator__gamma' : ['scale', 'auto'],
-                 'estimator__C' : [0, 0.1, 1, 5, 10],
+                 'estimator__gamma' : [0.001, 0.1],
+                 'estimator__C' : [0.1, 1, 5, 10],
                  'estimator__epsilon' : [0, 0,1, 1, 5, 10] }
     elif algorithm == "Random Forest":
         return { 'n_estimators' : [10, 50, 100, 200, 500],
@@ -80,7 +79,7 @@ def get_params(algorithm):
                  'min_samples_leaf' : [1, 2, 3, 4] }
 
 
-def random_search(algorithm, params, X, y, iters=20):
+def random_search(algorithm, params, X, y, iters=20, jobs=5):
     '''
     Testing the following algs: 
 
@@ -99,7 +98,7 @@ def random_search(algorithm, params, X, y, iters=20):
     elif algorithm == "Random Forest":
         clf = RandomForestRegressor()
 
-    random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=5, 
+    random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=jobs, 
                                        scoring='neg_mean_squared_log_error', verbose=2)
     random_search.fit(X, y)
     report(random_search.cv_results_)
@@ -132,7 +131,7 @@ if __name__ == "__main__":
                     1 - PCA
     '''
     clean_method = 0
-    preprocessing = 0
+    preprocessing = 1
 
     #read data from one of 6 datasets
     X, y = read_CSV(clean_method, preprocessing)
@@ -145,11 +144,11 @@ if __name__ == "__main__":
                 - SVM ----------- (Also making negative predictions) 
                 - Random Forest
     '''
-    algorithm = "Random Forest"
+    algorithm = "SVM"
     
     #this is where the params to test are stored
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-    random_search(algorithm, param_dict, X, y, iters=20)
+    random_search(algorithm, param_dict, X, y, iters=15, jobs=5)
 

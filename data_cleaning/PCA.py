@@ -17,12 +17,7 @@ def convert_to_csv(x, y, col_name, _set, data):
     file_name = "ORIGINAL" if col_name == "Column" else "PCA" 
     pca_df.to_csv("../data/NAN_%s/%s_split_data_%s.csv" % (data, file_name, _set))
 
-
-if __name__ == "__main__":
-
-    #choose from "mean", "to_0", or "deleted"
-    data = "mean"
-
+def PCA_(data):
 
     train = pd.read_csv("../data/cleaned_data/nan_%s.csv" % data)
     col_names = list(train.columns)
@@ -79,13 +74,23 @@ if __name__ == "__main__":
     X_train = pca.fit_transform(X_train)
     X_test = pca.fit_transform(X_test)
 
+    #accepted technique for non-negativity from this link
+    #https://stats.stackexchange.com/questions/420420/why-does-a-pca-component-have-negative-values-when-all-inputs-are-strictly-posit
+    scale_up = abs(min(X_train[:,0]))
+    X_train = X_train + scale_up
+    X_test = X_test + scale_up
+
     _set = "train"
     convert_to_csv(X_train, y_train, "PC", _set, data)
     _set = "test"
     convert_to_csv(X_test, y_test, "PC", _set, data)
 
 
-    
+if __name__ == "__main__":
+
+    data_readings = ["to_0", "deleted", "mean"]
+    for data in data_readings:
+        PCA_(data)
 
 
 

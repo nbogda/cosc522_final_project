@@ -82,22 +82,11 @@ class Data:
             self.train = self.train.dropna(axis=1)
 
     #scale data with min/max scaling
-    def scale_data(self, scale_outcomes=True):
+    def scale_data(self):
 
         col_names = list(self.train.columns)
         predictor_names = [x for x in col_names if "Outcome" not in x]
         self.train[predictor_names] = minmax_scaling(self.train, columns = predictor_names)
-       
-        if scale_outcomes:
-            outcomes = [x for x in col_names if "Outcome" in x]
-            feature_range = []
-            #saving the min and max values per column before standardizing
-            for o in outcomes:
-                feature_range.append([min(self.train[o]), max(self.train[o])])
-            #save min max in numpy file for future use (to invert the transform)
-            np.save("12_outcomes_feature_range_min_max.npy", np.array(feature_range))
-            self.train[outcomes] = minmax_scaling(self.train, columns = outcomes)
-            
 
     #to see the distribution of the outcomes
     def plot_counts(self):
@@ -149,6 +138,6 @@ if __name__ == "__main__":
         #directory that data is located in
         data = Data("../data")
         data.clean_nans(type_fill)
-        data.scale_data(scale_outcomes=False)
+        data.scale_data()
         #data.plot_counts()
         data.write_to_csv()
