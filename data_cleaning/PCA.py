@@ -20,7 +20,7 @@ def convert_to_csv(x, y, col_name, _set, data):
 
 if __name__ == "__main__":
 
-    data = "deleted"
+    data = "mean"
     train = pd.read_csv("../data/cleaned_data/nan_%s.csv" % data)
     col_names = list(train.columns)
     row, columns = train.shape

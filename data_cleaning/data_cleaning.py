@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 from mlxtend.preprocessing import minmax_scaling
+#from sklearn_pandas import DataFrameMapper
+
 
 #class to read in and clean data
 class Data:
@@ -63,10 +65,12 @@ class Data:
 
     #scale data with min/max scaling
     def scale_data(self):
+
         col_names = list(self.train.columns)
         predictor_names = [x for x in col_names if "Outcome" not in x]
         self.train[predictor_names] = minmax_scaling(self.train, columns = predictor_names)
-        
+       
+        '''
         outcomes = [x for x in col_names if "Outcome" in x]
         feature_range = []
         #saving the min and max values per column before standardizing
@@ -75,7 +79,8 @@ class Data:
         #save min max in numpy file for future use (to invert the transform)
         np.save("12_outcomes_feature_range_min_max.npy", np.array(feature_range))
         self.train[outcomes] = minmax_scaling(self.train, columns = outcomes)
-   
+        '''
+
     #to see the distribution of the outcomes
     def plot_counts(self):
         col_names = list(self.train.loc[:, self.train.columns.str.startswith('Outcome_')])

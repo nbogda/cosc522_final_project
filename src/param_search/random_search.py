@@ -38,17 +38,12 @@ def read_CSV(clean_method, preprocessing):
     print("\nYou have selected NaN %s, with %s data\n" % (file_paths[clean_method], file_name[preprocessing]))
 
     train = pd.read_csv("../../data/NAN_%s/%s_split_data_train.csv" % (file_paths[clean_method], file_name[preprocessing]))
-    test = pd.read_csv("../../data/NAN_%s/%s_split_data_test.csv" % (file_paths[clean_method], file_name[preprocessing]))
  
     #split data into predictions and predictors
     X = [] #predictors training
     y = [] #predictions training
     
     for index, row in train.iterrows():
-        y.append(list(row.ix[1:13]))
-        X.append(list(row.ix[13:]))
-        
-    for index, row in test.iterrows():
         y.append(list(row.ix[1:13]))
         X.append(list(row.ix[13:]))
         
@@ -65,7 +60,7 @@ def get_params(algorithm):
         return { 'n_neighbors' : np.arange(1, 100, 5),
                  'p' : [1, 2, 3] } #different orders of minkowski distance. 1=manhattan, 2=euclidean
     elif algorithm == "MLP": #broke
-        return { 'hidden_layer_sizes' : [(10, 10,)], #expand this later
+        return { 'hidden_layer_sizes' : [(10, 10,), (10,), (20, 20, 20,)], #expand this later
                  'alpha' : [0.01, 1, 5, 10]}
     elif algorithm == "Decision Tree":
         return { 'criterion' : ["mse", "friedman_mse", "mae"],
