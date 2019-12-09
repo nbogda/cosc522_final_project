@@ -132,7 +132,7 @@ if __name__ == "__main__":
                     1 - PCA
     '''
     clean_method = 1
-    preprocessing = 1
+    preprocessing = 0
 
     #read data from one of 6 datasets
     X, y = read_CSV(clean_method, preprocessing)
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                 - SVM ----------- (Also making negative predictions) 
                 - Random Forest
     '''
-    algorithm = "MLP"
+    algorithm = "SVM"
     
     #this is where the params to test are stored
     param_dict = get_params(algorithm)
