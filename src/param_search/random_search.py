@@ -18,6 +18,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.externals import joblib
 from itertools import combinations, combinations_with_replacement
+from sklearn.metrics import make_scorer, mean_squared_log_error
 
 
 #function to read in the CSV files
@@ -62,7 +63,7 @@ def get_params(algorithm):
                  'p' : [1, 2, 3] } #different orders of minkowski distance. 1=manhattan, 2=euclidean
     elif algorithm == "MLP": 
         hidden_layers = MLP_structure()
-        return { 'hidden_layer_sizes' : hidden_layers, #expand this later
+        return { 'hidden_layer_sizes' : hidden_layers,
                  'alpha' : [0.01, 1, 5, 10],
                  'learning_rate_init' : [0.001, 0.01, 0.1, 1, 5],
                  'batch_size' : [1, 10, 30, 200]}
@@ -83,6 +84,17 @@ def get_params(algorithm):
                  'min_samples_leaf' : [1, 2, 3, 4],
                  'max_features' : ["auto", "sqrt", "log2"] }
 
+#this is just to handle exceptions
+def custom_scorer(y_true, y_pred):
+    score = np.nan
+    try:
+        #keep this identical to original scoring method from sklearn
+        score = mean_squared_log_error(y_true, y_pred) * -1
+    except Exception:
+        pass
+    return score
+
+#for hidden layer/hidden neuron combos in MLP
 def MLP_structure():
 
     hidden_layers = [1, 3, 5]
@@ -92,7 +104,6 @@ def MLP_structure():
     for layer in hidden_layers:
         neuron_layer = list(combinations_with_replacement(hidden_neurons, layer))
         structure += tuple(neuron_layer)
-
     return structure
 
 def random_search_(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
@@ -115,10 +126,11 @@ def random_search_(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
     elif algorithm == "Random Forest":
         clf = RandomForestRegressor()
 
+    custom_neg_MSLE = make_scorer(custom_scorer)
     random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=jobs, 
-                                       scoring='neg_mean_squared_log_error', refit=True, verbose=2)
+                                       scoring=custom_neg_MSLE, refit=True, verbose=2)
     random_search.fit(X, y)
-    report(random_search.cv_results_)
+    #report(random_search.cv_results_)
 
     file_paths = ["deleted", "mean", "to_0"]
     file_name = ["ORIGINAL", "PCA"]
@@ -134,7 +146,7 @@ def random_search_(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
     best_score = np.sqrt(np.abs(random_search.best_score_))
     info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Best Params"] = str(best_params)
     info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Mean RMSLE"] = "%.4f" % best_score
-    info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Refit Time"] = "%.4f" % fit_time #NEW
+    info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Refit Time"] = "%.6f" % fit_time 
     print(info)
     info.to_csv("saved_models/Random_Search_Info.csv")
 
@@ -186,5 +198,5 @@ if __name__ == "__main__":
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-    random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=50, jobs=10)
+    random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=5, jobs=10)
 
