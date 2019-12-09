@@ -23,9 +23,27 @@ class Data:
                     2 - mean imputation
         '''
         self.type_fill = type_fill
-        #replace NaN in Outcome_ with 0 
-        self.train.loc[:, self.train.columns.str.startswith('Outcome_')] = self.train.loc[:, self.train.columns.str.startswith('Outcome_')].fillna(0)
+        
+        #replacing NaNs with last monthly outcome
+        #such sacrilege
+        batman = 0 #NaN(a) counter
+        outcomes_subset = self.train.loc[:, self.train.columns.str.startswith('Outcome_')]
+        for index, row in outcomes_subset.iterrows():
+            #find indices with NaNs
+            nan_indices = np.where(np.isnan(row))[0]
+            if nan_indices.size > 0:
+                #count how many NaNs we had to replace
+                batman += nan_indices.size
+                #get the last non-NaN value
+                fill_val = row.iloc[nan_indices[0] - 1]
+                #replace them with this fill value
+                row.iloc[nan_indices] = fill_val
+                outcomes_subset.iloc[index] = row
+        #put this transform back into the dataset
+        self.train.loc[:, self.train.columns.str.startswith('Outcome_')] = outcomes_subset
 
+        #replace NaN in Outcome_ with 0 
+        #self.train.loc[:, self.train.columns.str.startswith('Outcome_')] = self.train.loc[:, self.train.columns.str.startswith('Outcome_')].fillna(0)
         
         #check for NaNs in Quan_ columns
         quan_names = list(self.train.loc[:, self.train.columns.str.startswith('Quan_')])
@@ -69,17 +87,6 @@ class Data:
         col_names = list(self.train.columns)
         predictor_names = [x for x in col_names if "Outcome" not in x]
         self.train[predictor_names] = minmax_scaling(self.train, columns = predictor_names)
-       
-        '''
-        outcomes = [x for x in col_names if "Outcome" in x]
-        feature_range = []
-        #saving the min and max values per column before standardizing
-        for o in outcomes:
-            feature_range.append([min(self.train[o]), max(self.train[o])])
-        #save min max in numpy file for future use (to invert the transform)
-        np.save("12_outcomes_feature_range_min_max.npy", np.array(feature_range))
-        self.train[outcomes] = minmax_scaling(self.train, columns = outcomes)
-        '''
 
     #to see the distribution of the outcomes
     def plot_counts(self):
@@ -124,14 +131,13 @@ class Data:
 
 if __name__ == "__main__":
 
-    #directory that data is located in
-    data = Data("../data")
-    
     # 0 - convert NaN to 0
     # 1 - ruthlessly drop NaN
     # 2 - mean imputation, NaN over 60% dropped
-    type_fill = 2
-    data.clean_nans(type_fill)
-    data.scale_data()
-    #data.plot_counts()
-    data.write_to_csv()
+    for type_fill in range(0, 3):
+        #directory that data is located in
+        data = Data("../data")
+        data.clean_nans(type_fill)
+        data.scale_data()
+        #data.plot_counts()
+        data.write_to_csv()

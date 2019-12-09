@@ -12,11 +12,11 @@ from sklearn.svm import SVR
 from sklearn.neural_network import MLPRegressor
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_log_error
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV
+from sklearn.externals import joblib
 
 #function to read in the CSV files
 def read_CSV(clean_method, preprocessing):
@@ -44,10 +44,9 @@ def read_CSV(clean_method, preprocessing):
     y = [] #predictions training
     
     for index, row in train.iterrows():
-        y.append(list(row.ix[1:13]))
-        X.append(list(row.ix[13:]))
+        y.append(list(row.iloc[1:13]))
+        X.append(list(row.iloc[13:]))
         
-    #just gonna have one big test set for the random search, it does fold CV anyway
     return X, y
 
 def get_params(algorithm):
@@ -59,7 +58,7 @@ def get_params(algorithm):
     if algorithm == "kNN":
         return { 'n_neighbors' : np.arange(1, 100, 5),
                  'p' : [1, 2, 3] } #different orders of minkowski distance. 1=manhattan, 2=euclidean
-    elif algorithm == "MLP": #broke
+    elif algorithm == "MLP": 
         return { 'hidden_layer_sizes' : [(10, 10,), (10,), (20, 20, 20,)], #expand this later
                  'alpha' : [0.01, 1, 5, 10]}
     elif algorithm == "Decision Tree":
@@ -69,8 +68,8 @@ def get_params(algorithm):
                  'min_samples_leaf' : [1, 2, 3, 4] }
     elif algorithm == "SVM":
         return { 'estimator__kernel' : ['rbf', 'sigmoid'],
-                 'estimator__gamma' : ['scale', 'auto'],
-                 'estimator__C' : [0, 0.1, 1, 5, 10],
+                 'estimator__gamma' : [0.001, 0.1],
+                 'estimator__C' : [0.1, 1, 5, 10],
                  'estimator__epsilon' : [0, 0,1, 1, 5, 10] }
     elif algorithm == "Random Forest":
         return { 'n_estimators' : [10, 50, 100, 200, 500],
@@ -80,7 +79,7 @@ def get_params(algorithm):
                  'min_samples_leaf' : [1, 2, 3, 4] }
 
 
-def random_search(algorithm, params, X, y, iters=20):
+def random_search(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
     '''
     Testing the following algs: 
 
@@ -99,10 +98,27 @@ def random_search(algorithm, params, X, y, iters=20):
     elif algorithm == "Random Forest":
         clf = RandomForestRegressor()
 
-    random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=10, 
-                                       scoring='neg_mean_squared_log_error', verbose=2)
+    random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=jobs, 
+                                       scoring='neg_mean_squared_log_error', refit=True, verbose=2)
     random_search.fit(X, y)
     report(random_search.cv_results_)
+
+    file_paths = ["deleted", "mean", "to_0"]
+    file_name = ["ORIGINAL", "PCA"]
+    
+    #save the model
+    best_estimator = random_search.best_estimator_
+    joblib.dump(best_estimator, "saved_models/best_%s_%s_%s.joblib" % (algorithm, file_name[pp], file_paths[cm]))
+
+    #write info about the model
+    info = pd.read_csv("saved_models/Random_Search_Info.csv", index_col=0)
+    best_params = random_search.best_params_
+    best_score = np.sqrt(np.abs(random_search.best_score_))
+    info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Best Params"] = str(best_params)
+    info.loc["Best %s %s %s" % (algorithm, file_name[pp], file_paths[cm]), "Mean RMSLE"] = "%.4f" % best_score
+    print(info)
+    info.to_csv("saved_models/Random_Search_Info.csv")
+
 
 #stolen shamelessly off the internet
 def report(results, n_top=3):
@@ -140,16 +156,16 @@ if __name__ == "__main__":
     '''
     algorithm : string
                 - kNN
-                - MLP ----------- (Problem, making negative predictions, cant do RMSLE)
+                - MLP
                 - Decision Tree
-                - SVM ----------- (Also making negative predictions) 
+                - SVM  
                 - Random Forest
     '''
-    algorithm = "SVM"
+    algorithm = "kNN"
     
     #this is where the params to test are stored
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-    random_search(algorithm, param_dict, X, y, iters=20)
+    random_search(algorithm, param_dict, X, y, clean_method, preprocessing, iters=5, jobs=5)
 

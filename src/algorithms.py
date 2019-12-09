@@ -16,11 +16,12 @@ from sklearn.metrics import mean_squared_log_error
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.externals import joblib
 
 #function to read in the CSV files
 def read_CSV():
-    train = pd.read_csv("../data/PCA_split_data_train.csv")
-    test = pd.read_csv("../data/PCA_split_data_test.csv")
+    train = pd.read_csv("../data/NAN_deleted/PCA_split_data_train.csv")
+    test = pd.read_csv("../data/NAN_deleted/PCA_split_data_test.csv")
  
     #split data into "labels" and predictors (The actual training set was split 70-30 since the testing set has no outcomes)
     X_tr = [] #predictors training
@@ -29,12 +30,12 @@ def read_CSV():
     y_test = [] #predicitions testing
     
     for index, row in train.iterrows():
-        y_tr.append(list(row.ix[1:13]))
-        X_tr.append(list(row.ix[13:]))
+        y_tr.append(list(row.iloc[1:13]))
+        X_tr.append(list(row.iloc[13:]))
         
     for index, row in test.iterrows():
-        y_test.append(list(row.ix[1:13]))
-        X_test.append(list(row.ix[13:]))
+        y_test.append(list(row.iloc[1:13]))
+        X_test.append(list(row.iloc[13:]))
         
     return X_tr,y_tr,X_test,y_test
 
@@ -73,7 +74,9 @@ class Regression_Algs:
         return np.abs(y_pred)
 
     def kNN(self):
-        neigh = KNeighborsRegressor(n_neighbors=5)
+        #testing saving and opening model
+        #It works!!! :D
+        neigh = joblib.load("param_search/saved_models/best_kNN_ORIGINAL_deleted.joblib")
         neigh.fit(self.X_tr,self.y_tr)
         y_pred = neigh.predict(self.X_test)
         return np.abs(y_pred)
@@ -97,6 +100,6 @@ if __name__ == "__main__":
 
     X_tr,y_tr,X_test,y_test = read_CSV()
     algs = Regression_Algs(X_tr, y_tr, X_test, y_test)
-    pred = algs.linear_reg()
+    pred = algs.kNN()
     print(algs.eval(pred))
 
