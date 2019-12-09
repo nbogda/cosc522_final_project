@@ -18,6 +18,15 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.externals import joblib
 
+
+#Nasty lil dictionary used to determine which node will run which parmiganna combination
+jobs = {1:['kNN',0,0], 2:['kNN',0,1], 3:['kNN',1,0], 4:['kNN',1,1], 5:['kNN',2,0], 6:['kNN',2,1],
+	7:['MLP',0,0], 8:['MLP',0,1], 9:['MLP',1,0], 10:['MLP',1,1], 11:['MLP',2,0], 12:['MLP',2,1],
+	13:['Decision Tree',0,0], 14:['Decision Tree',0,1], 15:['Decision Tree',1,0], 16:['Decision Tree',1,1], 17:['Decision Tree',2,0], 18:['Decision Tree',2,1],
+	19:['SVM',0,0], 20:['SVM',0,1], 21:['SVM',1,0], 22:['SVM',1,1], 23:['SVM',2,0], 24:['SVM',2,1],
+	25:['Random Forest',0,0], 26:['Random Forest',0,1], 27:['Random Forest',1,0], 28:['Random Forest',1,1], 29:['Random Forest',2,0], 30:['Random Forest',2,1]}
+
+
 #function to read in the CSV files
 def read_CSV(clean_method, preprocessing):
     '''
