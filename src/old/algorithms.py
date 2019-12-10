@@ -20,8 +20,8 @@ from sklearn.externals import joblib
 
 #function to read in the CSV files
 def read_CSV():
-    train = pd.read_csv("../data/NAN_deleted/PCA_split_data_train.csv")
-    test = pd.read_csv("../data/NAN_deleted/PCA_split_data_test.csv")
+    train = pd.read_csv("../../data/NAN_to_0/ORIGINAL_split_data_train.csv")
+    test = pd.read_csv("../../data/NAN_to_0/ORIGINAL_split_data_test.csv")
  
     #split data into "labels" and predictors (The actual training set was split 70-30 since the testing set has no outcomes)
     X_tr = [] #predictors training
@@ -84,6 +84,7 @@ class Regression_Algs:
     def linear_reg(self):
         reg = LinearRegression()
         reg.fit(self.X_tr,self.y_tr)
+        joblib.dump(reg, "../param_search/saved_models/best_linearRegression_ORIGINAL_to_0.joblib")
         y_pred = reg.predict(self.X_test)
         return np.abs(y_pred)
     
@@ -100,6 +101,6 @@ if __name__ == "__main__":
 
     X_tr,y_tr,X_test,y_test = read_CSV()
     algs = Regression_Algs(X_tr, y_tr, X_test, y_test)
-    pred = algs.kNN()
+    pred = algs.linear_reg()
     print(algs.eval(pred))
 
