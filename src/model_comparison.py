@@ -110,12 +110,13 @@ def generate_model_graphs(metric):
     ax.set_ylabel(metric, fontsize=14)
     ax.set_xticks((ind + width*2.5))
     ax.tick_params(labelsize=14, length=6, width=2)
+    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest", "Linear Regression"]
     ax.set_xticklabels(algorithms)
     legend1 = ax.legend((og_del[0], og_mean[0], og_0[0], pca_del[0], pca_mean[0], pca_0[0]), 
               ("Original NaN Deleted", "Original Mean Impute", "Original 0 Impute", "PCA NaN Deleted", "PCA Mean Impute", "PCA 0 Impute"),
               ncol=2, fontsize='large')
-    line = plt.axhline(y=top_score, linestyle="--")
-    ax.legend([line], ["Top Kaggle Score"], fontsize='large', loc=(0.001, 0.82))
+    #line = plt.axhline(y=top_score, linestyle="--")
+    #ax.legend([line], ["Top Kaggle Score"], fontsize='large', loc=(0.001, 0.82))
     plt.gca().add_artist(legend1)
     title = "Prediction Performance" if metric == "Mean RMSLE" else "Prediction Time"
     ax.set_title("Test Set Best Algorithm %s" % title, fontsize=14)
@@ -196,6 +197,6 @@ if __name__ == "__main__":
     #test_best_algs()
 
     #Mean RMSLE or Prediction Time
-    metric = "Mean RMSLE"
+    metric = "Prediction Time"
     generate_model_graphs(metric)
 
