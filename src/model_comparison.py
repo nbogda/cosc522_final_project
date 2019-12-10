@@ -81,7 +81,7 @@ def load_test_data(clean_method, preprocessing):
 
 def test_best_algs():
     
-    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest", "linearRegression"]
+    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest","linearRegression"]
 
     bar_values = [None] * len(algorithms)
     models_path = "param_search/saved_models/"
@@ -95,8 +95,8 @@ def test_best_algs():
                 preprocess = info[1]
                 if clean_method == "0": clean_method = "to_0" 
                 clf = joblib.load(models_path + name) #*******************************WHY GOD!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**********************
-                X, y = load_test_data(clean_method, preprocessing)
-                
+                X, y = load_test_data(clean_method, preprocess)
+                print("Loaded %s%s" %(models_path,name))
         
     
 
