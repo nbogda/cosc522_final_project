@@ -73,28 +73,18 @@ def generate_rs_graphs(metric, rf=True, pd=True):
 def generate_model_graphs(metric):
     '''
     metric : string
-             Mean RMSLE or Refit Time
-    
-    rf     : boolean
-             if rf=False, will exclude Random Forest from graph
-             only to be used when metric="Refit Time"
+             Mean RMSLE or Prediction Time
     '''
-    random_search_info = pd.read_csv("param_search/saved_models/Random_Search_Info.csv", index_col=0)
+    graph_info = pd.read_csv("graphs/Best_Model_Info.csv", index_col=0)
    
-    #to exclude or not to exclude random forest? 
-    N = 5
-    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest"]
-    if metric == "Refit Time" and not rf:
-        algorithms = ["kNN", "MLP", "Decision Tree", "SVM"]
-        N = 4
+    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest", "linearRegression"]
+    N = len(algorithms)
    
     #make arrays to hold info for the 6 datasets
     bar_values = [None] * N
-    for index, row in random_search_info.iterrows():
+    for index, row in graph_info.iterrows():
         #regex search for algorithm name in pandas file
         name = re.search("Best (.*) [^\s]+ [^\s]+", row.name).group(1)
-        if not rf and name == "Random Forest":
-            continue
         #add data to appropriate index
         bv_index = algorithms.index(name)
         if bar_values[bv_index] is None:
@@ -112,7 +102,7 @@ def generate_model_graphs(metric):
     pca_del = ax.bar(ind + width*3, bar_values[:,3], width)
     pca_mean = ax.bar(ind + width*4, bar_values[:,4], width)
     pca_0 = ax.bar(ind + width*5, bar_values[:,5], width)
-    if metric == "Refit Time":
+    if metric == "Prediction Time":
         metric += " (s)"
     ax.set_ylabel(metric, fontsize=14)
     ax.set_xticks((ind + width*2.5))
@@ -121,11 +111,9 @@ def generate_model_graphs(metric):
     ax.legend((og_del[0], og_mean[0], og_0[0], pca_del[0], pca_mean[0], pca_0[0]), 
               ("Original NaN Deleted", "Original Mean Impute", "Original 0 Impute", "PCA NaN Deleted", "PCA Mean Impute", "PCA 0 Impute"),
               ncol=2, fontsize='large')
-    title = "Performance" if metric == "Mean RMSLE" else "Fit Time"
-    if not rf:
-        title += " without Random Forest"
-    ax.set_title("Random Search Best Algorithm %s" % title, fontsize=14)
-    plt.savefig("graphs/random_search_best_alg_%s.png" % title)
+    title = "Prediction Performance" if metric == "Mean RMSLE" else "Prediction Time"
+    ax.set_title("Test Set Best Algorithm %s" % title, fontsize=14)
+    plt.savefig("graphs/test_set_best_alg_%s.png" % title)
     
 def load_test_data(clean_method, preprocessing):
 
@@ -197,9 +185,12 @@ def test_best_algs():
 if __name__ == "__main__":
 
     #Mean RMSLE or Refit Time
-    metric = "Refit Time"
+    #metric = "Refit Time"
     
     #generate_rs_graphs(metric, rf=False)
     #test_best_algs()
 
+    #Mean RMSLE or Prediction Time
+    metric = "Prediction Time"
+    generate_model_graphs(metric)
 
