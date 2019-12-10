@@ -4,46 +4,43 @@ import pandas as pd
 import os
 import random as rand
 import sys
-import collections
-from sklearn.model_selection import cross_val_score
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.svm import SVR
-from sklearn.neural_network import MLPRegressor
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_log_error
-from sklearn.multioutput import MultiOutputRegressor
-from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import RandomForestRegressor
 from sklearn.externals import joblib
 import matplotlib.pyplot as plt
 import re
 
-#we want one large graph
-#x-ticks are the mf'ing algorithms
-#6 bars for RMSE, one for time
-#(shit is gonna be sideways on the page lol)
-
 #graphs to visualize data from the random search
-def generate_rs_graphs(metric, rf=True):
+def generate_rs_graphs(metric, rf=True, pd=True):
+    '''
+    metric : string
+             Mean RMSLE or Refit Time
+    
+    rf     : boolean
+             if rf=False, will exclude Random Forest from graph
+             only to be used when metric="Refit Time"
+    '''
     random_search_info = pd.read_csv("param_search/saved_models/Random_Search_Info.csv", index_col=0)
    
+    #to exclude or not to exclude random forest? 
     N = 5
     algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest"]
     if metric == "Refit Time" and not rf:
         algorithms = ["kNN", "MLP", "Decision Tree", "SVM"]
         N = 4
    
+    #make arrays to hold info for the 6 datasets
     bar_values = [None] * N
     for index, row in random_search_info.iterrows():
+        #regex search for algorithm name in pandas file
         name = re.search("Best (.*) [^\s]+ [^\s]+", row.name).group(1)
         if not rf and name == "Random Forest":
             continue
+        #add data to appropriate index
         bv_index = algorithms.index(name)
         if bar_values[bv_index] is None:
             bar_values[bv_index] = []
         bar_values[bv_index].append(row.loc[metric])
     
+    #plot the bars
     fig, ax = plt.subplots(figsize=(20,10))
     ind = np.arange(N)
     width = 0.1
@@ -69,14 +66,46 @@ def generate_rs_graphs(metric, rf=True):
     ax.set_title("Random Search Best Algorithm %s" % title, fontsize=14)
     plt.savefig("graphs/random_search_best_alg_%s.png" % title)
     
+def load_test_data(clean_method, preprocessing):
+
+    test = pd.read_csv("../data/NAN_%s/%s_split_data_test.csv" % (clean_method, preprocessing))
+    #split data into predictions and predictors
+    X = [] #predictors training
+    y = [] #predictions training
+
+    for index, row in test.iterrows():
+        y.append(list(row.iloc[1:13]))
+        X.append(list(row.iloc[13:]))
+    return X, y
+
 
 def test_best_algs():
-    file_paths = ["deleted", "mean", "to_0"]
-    file_names = ["ORIGINAL", "PCA"]
-    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest"]
+    
+    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest", "linearRegression"]
+
+    bar_values = [None] * len(algorithms)
+    models_path = "param_search/saved_models/"
+    for root, dirs, files in os.walk(models_path):
+        for name in files:
+            if name.endswith(".joblib"):
+                #regex search for info from file name
+                info = re.findall("(?<=_)([^_]+)(?=_)", name)
+                clean_method = re.search(".*_(.*).joblib", name).group(1)
+                alg_name = info[0]
+                preprocess = info[1]
+                if clean_method == "0": clean_method = "to_0" 
+                clf = joblib.load(models_path + name) #*******************************WHY GOD!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**********************
+                X, y = load_test_data(clean_method, preprocessing)
+                
+        
+    
 
 if __name__ == "__main__":
 
     #Mean RMSLE or Refit Time
     metric = "Refit Time"
-    generate_rs_graphs(metric, rf=False)
+    #generate_rs_graphs(metric, rf=False)
+
+    test_best_algs()
+
+
