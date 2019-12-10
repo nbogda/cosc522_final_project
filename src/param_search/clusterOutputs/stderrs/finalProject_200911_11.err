@@ -1,0 +1,1014 @@
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+[Parallel(n_jobs=45)]: Using backend LokyBackend with 45 concurrent workers.
+[Parallel(n_jobs=45)]: Done  72 tasks      | elapsed:  1.2min
+[Parallel(n_jobs=45)]: Done 275 tasks      | elapsed:  3.7min
+[Parallel(n_jobs=45)]: Done 500 out of 500 | elapsed:  6.2min finished
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/model_selection/_search.py:814: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:229: RuntimeWarning: overflow encountered in double_scalars
+  loss += (0.5 * self.alpha) * values / n_samples
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:195: RuntimeWarning: overflow encountered in square
+  return ((y_true - y_pred) ** 2).mean() / 2
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:133: RuntimeWarning: invalid value encountered in multiply
+  delta *= Z
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/_base.py:134: RuntimeWarning: invalid value encountered in multiply
+  delta *= (1 - Z)
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)

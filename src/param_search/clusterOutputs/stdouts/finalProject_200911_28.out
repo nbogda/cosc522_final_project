@@ -1,0 +1,1038 @@
+My SLURM_ARRAY_TASK_ID:  28
+
+You have selected NaN mean, with PCA data
+
+Fitting 10 folds for each of 50 candidates, totalling 500 fits
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 2.0min
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   3.9s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   3.9s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  48.0s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=  57.4s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=  58.3s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  22.9s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  24.0s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   5.0s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   4.9s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.7s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.5s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   6.9s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   8.5s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  13.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  35.5s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  29.3s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.9s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.6s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  50.9s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=  57.8s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total= 1.1min
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  24.2s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  24.3s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   5.0s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.4s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.5s
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   5.3s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  12.9s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.2s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.2s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  24.4s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.9s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 4.4min
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.4s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.4s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.4s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   4.9s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   4.8s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.7s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.2s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   5.8s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 1.9min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.5s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  49.2s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=  56.5s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total= 1.0min
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  23.0s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  25.1s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   5.0s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   5.1s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.4s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.6s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.5s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   5.5s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   8.4s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  13.3s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.2s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.2s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  32.5s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 4.9min
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.7s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.6s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.5s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  14.1s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  35.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 4.6min
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   4.9s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.5s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.5s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.7s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.7s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.2s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.2s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  38.7s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  29.6s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.5s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.4s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  52.7s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=  59.6s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total= 1.0min
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  23.8s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  25.8s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   5.2s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.6s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.5s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 1.9min
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   3.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   3.8s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  51.3s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mse, total=   0.5s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=  59.1s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total= 1.0min
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  24.4s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=4, max_features=log2, criterion=mae, total=  25.4s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   5.2s
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.4s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.4s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  29.8s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  33.1s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.2s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.9s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 4.8min
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   0.6s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.5s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   6.5s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   9.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  13.4s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  34.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.9s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 4.8min
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.5s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.5s
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  30.8s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  22.6s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.4s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 4.7min
+[CV] n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=6, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   2.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=log2, criterion=friedman_mse, total=   2.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mse, total=   4.5s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   1.5s
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  29.4s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.3s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  25.5s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.5s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 5.1min
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   6.3s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   9.0s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  13.0s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  37.4s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.6s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 5.1min
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.4s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   5.8s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  13.3s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  37.7s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.9s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 5.2min
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  27.9s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  24.3s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.6s
+[CV] n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=mae, total= 5.6min
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.4s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   6.2s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  13.0s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  34.5s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.9s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  29.6s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.9s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.5s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 4.7min
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   5.8s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 2.0min
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   4.0s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   4.0s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.3min
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.3s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 2.0min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.8s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.5min
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 1.8min
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.6s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.9s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.6min
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   5.1s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 1.9min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  13.2s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.7min
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  28.9s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  31.8s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.7s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.2s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  28.7s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.7s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  47.0s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.2min
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  12.7s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  31.8s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   1.9s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  29.5s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.2s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.1s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  47.5s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.6min
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.3s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.3s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.2s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  37.9s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  29.4s
+[CV] n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.3s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.7s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=auto, criterion=friedman_mse, total=  12.3s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  47.4s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.6min
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   5.2s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 1.8min
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   8.0s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   3.9s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   4.0s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  48.8s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.7min
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   5.4s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 1.9min
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=2, max_features=auto, criterion=mse, total=   7.8s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   3.9s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   3.9s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=  48.0s
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=1, max_features=auto, criterion=mae, total= 5.7min
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.0s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   9.0s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.1min
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 7.4min
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  26.4s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.1s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  18.0s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  38.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 7.6min
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.2s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   8.8s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.2min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 8.0min
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.2s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   9.2s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.2min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 8.0min
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.0s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   9.3s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.2min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 8.1min
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   4.9s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.3s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.2min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 8.1min
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.3s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   8.8s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.2min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 8.3min
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   5.6s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.5s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.2min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 8.2min
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.3s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   6.4s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.9s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.2min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 8.3min
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=friedman_mse, total=  11.3s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.4s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.2min
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mae, total= 8.7min
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   5.9s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.5s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  20.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  38.2s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=23.3min
+[CV] n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=6, min_samples_leaf=4, max_features=log2, criterion=mae, total=   5.8s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=mse, total=   8.9s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  12.7s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.1s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.2s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.6s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  17.8s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  38.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=24.0min
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  28.9s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.2s
+[CV] n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=500, min_samples_split=4, min_samples_leaf=3, max_features=sqrt, criterion=friedman_mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  19.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  37.9s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=24.0min
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=sqrt, criterion=mae, total= 1.8min
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=24.0min
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  27.1s
+[CV] n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   1.3s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=2, max_features=log2, criterion=mae, total=  35.2s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.4s
+[CV] n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.8s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  27.7s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=24.4min
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   6.2s
+[CV] n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=200, min_samples_split=6, min_samples_leaf=3, max_features=auto, criterion=mse, total=  12.5s
+[CV] n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=200, min_samples_split=4, min_samples_leaf=1, max_features=log2, criterion=mae, total= 1.3min
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=24.7min
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  28.5s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  19.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  39.7s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=24.9min
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  27.3s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.6s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  36.3s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  29.6s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=25.6min
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=3, max_features=auto, criterion=mse, total=   3.4s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   5.0s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mse, total=   0.7s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.9s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.1s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.6s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=1, max_features=log2, criterion=mae, total=  35.1s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  27.5s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=25.8min
+[CV] n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=2, min_samples_leaf=3, max_features=log2, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=6, min_samples_leaf=3, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=   5.8s
+[CV] n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=200, min_samples_split=8, min_samples_leaf=1, max_features=auto, criterion=friedman_mse, total=  13.8s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=2, max_features=sqrt, criterion=mse, total=   0.1s
+[CV] n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse 
+[CV]  n_estimators=500, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=mse, total=   3.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse 
+[CV]  n_estimators=10, min_samples_split=8, min_samples_leaf=4, max_features=sqrt, criterion=friedman_mse, total=   0.1s
+[CV] n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse 
+[CV]  n_estimators=100, min_samples_split=8, min_samples_leaf=1, max_features=log2, criterion=friedman_mse, total=   0.5s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=4, max_features=auto, criterion=mae, total=  21.2s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.8s
+[CV] n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=10, min_samples_split=4, min_samples_leaf=2, max_features=sqrt, criterion=mae, total=   2.9s
+[CV] n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse 
+[CV]  n_estimators=100, min_samples_split=2, min_samples_leaf=4, max_features=auto, criterion=mse, total=   5.7s
+[CV] n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae 
+[CV]  n_estimators=50, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, criterion=mae, total=  27.7s
+[CV] n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae 
+[CV]  n_estimators=500, min_samples_split=2, min_samples_leaf=2, max_features=auto, criterion=mae, total=26.4min
+                                                                           Best Params  ...  Refit Time
+Best kNN ORIGINAL deleted                                   {'p': 1, 'n_neighbors': 6}  ...    0.027174
+Best kNN ORIGINAL mean                                     {'p': 1, 'n_neighbors': 11}  ...    0.028479
+Best kNN ORIGINAL to_0                                     {'p': 1, 'n_neighbors': 11}  ...    0.029016
+Best kNN PCA deleted                                        {'p': 2, 'n_neighbors': 6}  ...    0.007349
+Best kNN PCA mean                                           {'p': 2, 'n_neighbors': 6}  ...    0.007738
+Best kNN PCA to_0                                          {'p': 2, 'n_neighbors': 11}  ...    0.007281
+Best MLP ORIGINAL deleted            {'learning_rate_init': 0.01, 'hidden_layer_siz...  ...     4.58434
+Best MLP ORIGINAL mean               {'learning_rate_init': 0.001, 'hidden_layer_si...  ...    0.729548
+Best MLP ORIGINAL to_0               {'learning_rate_init': 0.01, 'hidden_layer_siz...  ...     1.16943
+Best MLP PCA deleted                 {'learning_rate_init': 0.001, 'hidden_layer_si...  ...      1.9071
+Best MLP PCA mean                    {'learning_rate_init': 0.01, 'hidden_layer_siz...  ...     2.20861
+Best MLP PCA to_0                    {'learning_rate_init': 0.01, 'hidden_layer_siz...  ...     1.45622
+Best Decision Tree ORIGINAL deleted  {'min_samples_split': 4, 'min_samples_leaf': 4...  ...     6.87614
+Best Decision Tree ORIGINAL mean     {'min_samples_split': 2, 'min_samples_leaf': 3...  ...    0.064343
+Best Decision Tree ORIGINAL to_0     {'min_samples_split': 2, 'min_samples_leaf': 4...  ...     6.30516
+Best Decision Tree PCA deleted       {'min_samples_split': 4, 'min_samples_leaf': 4...  ...    0.094653
+Best Decision Tree PCA mean          {'min_samples_split': 4, 'min_samples_leaf': 3...  ...    0.128855
+Best Decision Tree PCA to_0          {'min_samples_split': 8, 'min_samples_leaf': 3...  ...    0.128049
+Best SVM ORIGINAL deleted            {'estimator__kernel': 'poly', 'estimator__gamm...  ...       2.391
+Best SVM ORIGINAL mean               {'estimator__kernel': 'poly', 'estimator__gamm...  ...     2.53318
+Best SVM ORIGINAL to_0               {'estimator__kernel': 'poly', 'estimator__gamm...  ...     2.54955
+Best SVM PCA deleted                 {'estimator__kernel': 'poly', 'estimator__gamm...  ...    0.851098
+Best SVM PCA mean                    {'estimator__kernel': 'poly', 'estimator__gamm...  ...    0.846144
+Best SVM PCA to_0                    {'estimator__kernel': 'poly', 'estimator__gamm...  ...    0.865714
+Best Random Forest ORIGINAL deleted  {'n_estimators': 50, 'min_samples_split': 8, '...  ...     144.458
+Best Random Forest ORIGINAL mean                                                   NaN  ...         NaN
+Best Random Forest ORIGINAL to_0     {'n_estimators': 50, 'min_samples_split': 4, '...  ...     164.818
+Best Random Forest PCA deleted                                                     NaN  ...         NaN
+Best Random Forest PCA mean          {'n_estimators': 200, 'min_samples_split': 6, ...  ...  607.498055
+Best Random Forest PCA to_0                                                        NaN  ...         NaN
+
+[30 rows x 3 columns]

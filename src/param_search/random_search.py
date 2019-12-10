@@ -137,7 +137,7 @@ def random_search_(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
 
     custom_neg_MSLE = make_scorer(custom_scorer)
     random_search = RandomizedSearchCV(clf, param_distributions=params, n_iter=iters, n_jobs=jobs, 
-                                       scoring=custom_neg_MSLE, refit=True, verbose=2)
+                                       scoring=custom_neg_MSLE, refit=True, verbose=2,cv=10)
     random_search.fit(X, y)
     #report(random_search.cv_results_)
 
@@ -187,7 +187,7 @@ if __name__ == "__main__":
                     0 - ORIGINAL
                     1 - PCA
     '''
-    print(sys.argv)
+   # print(sys.argv)
     jobNo = int(sys.argv[1])     #For cluster
     clean_method = jobs[jobNo][1]  #For cluster
     preprocessing = jobs[jobNo][2]  #For cluster
@@ -209,5 +209,5 @@ if __name__ == "__main__":
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-   # random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=50, jobs=45)
-    print("Testing search with job params. Alg: %s, Clean Method: %d, Preprocessing: %d" %(jobs[jobNo][0],jobs[jobNo][1],jobs[jobNo][2]))
+    random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=50, jobs=45)
+   # print("Testing search with job params. Alg: %s, Clean Method: %d, Preprocessing: %d" %(jobs[jobNo][0],jobs[jobNo][1],jobs[jobNo][2]))
