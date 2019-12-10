@@ -77,14 +77,19 @@ def generate_model_graphs(metric):
     '''
     graph_info = pd.read_csv("graphs/Best_Model_Info.csv", index_col=0)
    
-    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest", "linearRegression"]
+    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest"]
     N = len(algorithms)
-   
+
+    #peter prefenhoffer
+    top_score = 0.55494
+    
     #make arrays to hold info for the 6 datasets
-    bar_values = [None] * N
+    bar_values = [None] * N 
     for index, row in graph_info.iterrows():
         #regex search for algorithm name in pandas file
         name = re.search("Best (.*) [^\s]+ [^\s]+", row.name).group(1)
+        if name == "linearRegression":
+            continue
         #add data to appropriate index
         bv_index = algorithms.index(name)
         if bar_values[bv_index] is None:
@@ -96,24 +101,27 @@ def generate_model_graphs(metric):
     ind = np.arange(N)
     width = 0.1
     bar_values = np.array(bar_values)
-    og_del = ax.bar(ind, bar_values[:,0], width)
-    og_mean = ax.bar(ind + width, bar_values[:,1], width)
-    og_0 = ax.bar(ind + width*2, bar_values[:,2], width)
-    pca_del = ax.bar(ind + width*3, bar_values[:,3], width)
-    pca_mean = ax.bar(ind + width*4, bar_values[:,4], width)
-    pca_0 = ax.bar(ind + width*5, bar_values[:,5], width)
+    og_del = ax.bar(ind + width, bar_values[:,0], width)
+    og_mean = ax.bar(ind + width*2, bar_values[:,1], width)
+    og_0 = ax.bar(ind + width*3, bar_values[:,2], width)
+    pca_del = ax.bar(ind + width*4, bar_values[:,3], width)
+    pca_mean = ax.bar(ind + width*5, bar_values[:,4], width)
+    pca_0 = ax.bar(ind + width*6, bar_values[:,5], width)
     if metric == "Prediction Time":
         metric += " (s)"
     ax.set_ylabel(metric, fontsize=14)
     ax.set_xticks((ind + width*2.5))
     ax.tick_params(labelsize=14)
     ax.set_xticklabels(algorithms)
-    ax.legend((og_del[0], og_mean[0], og_0[0], pca_del[0], pca_mean[0], pca_0[0]), 
+    legend1 = ax.legend((og_del[0], og_mean[0], og_0[0], pca_del[0], pca_mean[0], pca_0[0]), 
               ("Original NaN Deleted", "Original Mean Impute", "Original 0 Impute", "PCA NaN Deleted", "PCA Mean Impute", "PCA 0 Impute"),
               ncol=2, fontsize='large')
+    line = plt.axhline(y=top_score, linestyle="--")
+    ax.legend([line], ["Top Kaggle Score"], fontsize='large', loc=(0.86, 0.82))
+    plt.gca().add_artist(legend1)
     title = "Prediction Performance" if metric == "Mean RMSLE" else "Prediction Time"
-    ax.set_title("Test Set Best Algorithm %s" % title, fontsize=14)
-    plt.savefig("graphs/test_set_best_alg_%s.png" % title)
+    ax.set_title("Test Set Best Algorithm %s without Linear Regression" % title, fontsize=14)
+    plt.savefig("graphs/test_set_best_alg_%s_noLR.png" % title)
     
 def load_test_data(clean_method, preprocessing):
 
@@ -167,7 +175,6 @@ def test_best_algs():
                 alg_name = info[0]
                 preprocess = info[1]
                 if clean_method == "0": clean_method = "to_0"
-                print(clean_method, alg_name, preprocess)
                 clf = joblib.load(models_path + name) 
                 X, y = load_test_data(clean_method, preprocess)
                 print("Loaded %s%s" %(models_path,name))
@@ -191,6 +198,6 @@ if __name__ == "__main__":
     #test_best_algs()
 
     #Mean RMSLE or Prediction Time
-    metric = "Prediction Time"
+    metric = "Mean RMSLE"
     generate_model_graphs(metric)
 
