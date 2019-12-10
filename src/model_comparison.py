@@ -132,7 +132,7 @@ def test_best_algs():
                 end_time = time.time() - start_time
                 multiple, overall = eval(y, np.abs(y_pred)) #ugh
                 report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "Mean RMSLE"] = "%.6f" % overall 
-                report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "Prediction Time"] = "%.10f" % overall
+                report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "Prediction Time"] = "%.10f" % end_time
                 for i in range(0, len(multiple)):
                     report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "RMSLE Month %s" % str(i + 1)] = "%.6f" % multiple[i]
     report.to_csv("graphs/Best_Model_Info.csv")
