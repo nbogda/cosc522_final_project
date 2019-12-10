@@ -7,6 +7,12 @@ import sys
 import joblib
 import matplotlib.pyplot as plt
 import re
+from sklearn.metrics import mean_squared_log_error
+import time
+
+#just importing this to test stuff
+from sklearn.linear_model import LinearRegression
+
 
 #graphs to visualize data from the random search
 def generate_rs_graphs(metric, rf=True, pd=True):
@@ -78,10 +84,33 @@ def load_test_data(clean_method, preprocessing):
         X.append(list(row.iloc[13:]))
     return X, y
 
+def eval(y_test, y_pred):
+
+    multiple_err = np.sqrt(mean_squared_log_error(y_test, y_pred, multioutput='raw_values'))
+    overall_err = np.sqrt(mean_squared_log_error(y_test, y_pred))
+    return multiple_err, overall_err
+
+#to make the skeleton
+def make_report():
+
+    file_paths = ["deleted", "mean", "to_0"]
+    file_names = ["ORIGINAL", "PCA"]
+    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest"]
+    row_names = []
+    for a in algorithms:
+        for n in file_names:
+            for p in file_paths:
+                name = "Best %s %s %s" % (a, n, p)
+                row_names.append(name)
+    col_names = ["Mean RMSLE", "Prediction Time"]
+    col_names += ["RMSLE Month %d" % i for i in range(1, 13)]
+    df = pd.DataFrame(None, index=[row_names], columns=col_names)
+    return(df)
 
 def test_best_algs():
-    
+        
     algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest","linearRegression"]
+    report = make_report()
 
     bar_values = [None] * len(algorithms)
     models_path = "param_search/saved_models/"
@@ -93,11 +122,20 @@ def test_best_algs():
                 clean_method = re.search(".*_(.*).joblib", name).group(1)
                 alg_name = info[0]
                 preprocess = info[1]
-                if clean_method == "0": clean_method = "to_0" 
-                clf = joblib.load(models_path + name) #*******************************WHY GOD!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**********************
+                if clean_method == "0": clean_method = "to_0"
+                print(clean_method, alg_name, preprocess)
+                clf = joblib.load(models_path + name) 
                 X, y = load_test_data(clean_method, preprocess)
                 print("Loaded %s%s" %(models_path,name))
-        
+                start_time = time.time()
+                y_pred = clf.predict(X)
+                end_time = time.time() - start_time
+                multiple, overall = eval(y, np.abs(y_pred)) #ugh
+                report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "Mean RMSLE"] = "%.6f" % overall 
+                report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "Prediction Time"] = "%.10f" % overall
+                for i in range(0, len(multiple)):
+                    report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "RMSLE Month %s" % str(i + 1)] = "%.6f" % multiple[i]
+    report.to_csv("graphs/Best_Model_Info.csv")
     
 
 if __name__ == "__main__":
