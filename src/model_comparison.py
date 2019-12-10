@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import random as rand
 import sys
-from sklearn.externals import joblib
+import joblib
 import matplotlib.pyplot as plt
 import re
 
