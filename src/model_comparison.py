@@ -10,12 +10,67 @@ import re
 from sklearn.metrics import mean_squared_log_error
 import time
 
-#just importing this to test stuff
-from sklearn.linear_model import LinearRegression
-
 
 #graphs to visualize data from the random search
 def generate_rs_graphs(metric, rf=True, pd=True):
+    '''
+    metric : string
+             Mean RMSLE or Refit Time
+    
+    rf     : boolean
+             if rf=False, will exclude Random Forest from graph
+             only to be used when metric="Refit Time"
+    '''
+    random_search_info = pd.read_csv("param_search/saved_models/Random_Search_Info.csv", index_col=0)
+   
+    #to exclude or not to exclude random forest? 
+    N = 5
+    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest"]
+    if metric == "Refit Time" and not rf:
+        algorithms = ["kNN", "MLP", "Decision Tree", "SVM"]
+        N = 4
+   
+    #make arrays to hold info for the 6 datasets
+    bar_values = [None] * N
+    for index, row in random_search_info.iterrows():
+        #regex search for algorithm name in pandas file
+        name = re.search("Best (.*) [^\s]+ [^\s]+", row.name).group(1)
+        if not rf and name == "Random Forest":
+            continue
+        #add data to appropriate index
+        bv_index = algorithms.index(name)
+        if bar_values[bv_index] is None:
+            bar_values[bv_index] = []
+        bar_values[bv_index].append(row.loc[metric])
+    
+    #plot the bars
+    fig, ax = plt.subplots(figsize=(20,10))
+    ind = np.arange(N)
+    width = 0.1
+    bar_values = np.array(bar_values)
+    og_del = ax.bar(ind, bar_values[:,0], width)
+    og_mean = ax.bar(ind + width, bar_values[:,1], width)
+    og_0 = ax.bar(ind + width*2, bar_values[:,2], width)
+    pca_del = ax.bar(ind + width*3, bar_values[:,3], width)
+    pca_mean = ax.bar(ind + width*4, bar_values[:,4], width)
+    pca_0 = ax.bar(ind + width*5, bar_values[:,5], width)
+    if metric == "Refit Time":
+        metric += " (s)"
+    ax.set_ylabel(metric, fontsize=14)
+    ax.set_xticks((ind + width*2.5))
+    ax.tick_params(labelsize=14)
+    ax.set_xticklabels(algorithms)
+    ax.legend((og_del[0], og_mean[0], og_0[0], pca_del[0], pca_mean[0], pca_0[0]), 
+              ("Original NaN Deleted", "Original Mean Impute", "Original 0 Impute", "PCA NaN Deleted", "PCA Mean Impute", "PCA 0 Impute"),
+              ncol=2, fontsize='large')
+    title = "Performance" if metric == "Mean RMSLE" else "Fit Time"
+    if not rf:
+        title += " without Random Forest"
+    ax.set_title("Random Search Best Algorithm %s" % title, fontsize=14)
+    plt.savefig("graphs/random_search_best_alg_%s.png" % title)
+
+#graphs to visualize data from the random search
+def generate_model_graphs(metric):
     '''
     metric : string
              Mean RMSLE or Refit Time
@@ -107,6 +162,7 @@ def make_report():
     df = pd.DataFrame(None, index=[row_names], columns=col_names)
     return(df)
 
+#DO NOT RUN THIS AGAIN OR YOU'LL BE SORRY
 def test_best_algs():
         
     algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest","linearRegression"]
@@ -132,7 +188,7 @@ def test_best_algs():
                 end_time = time.time() - start_time
                 multiple, overall = eval(y, np.abs(y_pred)) #ugh
                 report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "Mean RMSLE"] = "%.6f" % overall 
-                report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "Prediction Time"] = "%.10f" % overall
+                report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "Prediction Time"] = "%.10f" % end_time
                 for i in range(0, len(multiple)):
                     report.loc["Best %s %s %s" % (alg_name, preprocess, clean_method), "RMSLE Month %s" % str(i + 1)] = "%.6f" % multiple[i]
     report.to_csv("graphs/Best_Model_Info.csv")
@@ -142,8 +198,8 @@ if __name__ == "__main__":
 
     #Mean RMSLE or Refit Time
     metric = "Refit Time"
+    
     #generate_rs_graphs(metric, rf=False)
-
-    test_best_algs()
+    #test_best_algs()
 
 
