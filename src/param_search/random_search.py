@@ -75,7 +75,8 @@ def get_params(algorithm):
         return { 'hidden_layer_sizes' : hidden_layers,
                  'alpha' : [0.01, 1, 5, 10],
                  'learning_rate_init' : [0.001, 0.01, 0.1, 1, 5],
-                 'batch_size' : [1, 10, 30, 200]}
+                 'batch_size' : [1, 10, 30, 200],
+                 'activation' : ['logistic', 'relu', 'tanh']}
     elif algorithm == "Decision Tree":
         return { 'criterion' : ["mse", "friedman_mse", "mae"],
                  'min_samples_split' : [2, 4, 6, 8],
@@ -126,7 +127,7 @@ def random_search_(algorithm, params, X, y, cm, pp, iters=20, jobs=5):
         clf = KNeighborsRegressor()
     elif algorithm == "MLP":
         #closest to what we did in class
-        clf = MLPRegressor(activation="logistic", solver="sgd")
+        clf = MLPRegressor(solver="sgd")
     elif algorithm == "Decision Tree":
         clf = DecisionTreeRegressor()
     elif algorithm == "SVM":
