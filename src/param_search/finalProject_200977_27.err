@@ -1,0 +1,9 @@
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+[Parallel(n_jobs=45)]: Using backend LokyBackend with 45 concurrent workers.
+[Parallel(n_jobs=45)]: Done  72 tasks      | elapsed:  1.1min
+[Parallel(n_jobs=45)]: Done 275 tasks      | elapsed:  3.9min
+[Parallel(n_jobs=45)]: Done 558 tasks      | elapsed:  7.1min
+[Parallel(n_jobs=45)]: Done 1000 out of 1000 | elapsed: 54.3min finished
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/model_selection/_search.py:814: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)

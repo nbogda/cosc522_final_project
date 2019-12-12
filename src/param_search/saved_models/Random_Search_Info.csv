@@ -1,31 +1,31 @@
 ,Best Params,Mean RMSLE,Refit Time
-Best kNN ORIGINAL deleted,"{'p': 1, 'n_neighbors': 6}",0.937,0.027174
-Best kNN ORIGINAL mean,"{'p': 1, 'n_neighbors': 11}",0.92,0.028479
-Best kNN ORIGINAL to_0,"{'p': 1, 'n_neighbors': 11}",0.89,0.029016000000000007
-Best kNN PCA deleted,"{'p': 2, 'n_neighbors': 6}",0.9452,0.007349
-Best kNN PCA mean,"{'p': 2, 'n_neighbors': 6}",0.9381,0.007737999999999998
-Best kNN PCA to_0,"{'p': 2, 'n_neighbors': 11}",0.9166,0.007281
-Best MLP ORIGINAL deleted,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 5, 5, 5, 5), 'batch_size': 1, 'alpha': 10, 'activation': 'tanh'}",1.2384,9.484617
-Best MLP ORIGINAL mean,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (10, 10, 10, 20, 20), 'batch_size': 1, 'alpha': 1, 'activation': 'logistic'}",1.2538,11.069724
-Best MLP ORIGINAL to_0,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (10, 10, 10), 'batch_size': 10, 'alpha': 10, 'activation': 'logistic'}",1.2369,5.425845
-Best MLP PCA deleted,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5,), 'batch_size': 30, 'alpha': 10, 'activation': 'logistic'}",1.2412,0.461942
-Best MLP PCA mean,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 5, 20, 20, 20), 'batch_size': 200, 'alpha': 10, 'activation': 'tanh'}",1.2523,0.38512399999999997
-Best MLP PCA to_0,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 10, 10, 10, 10), 'batch_size': 1, 'alpha': 1, 'activation': 'logistic'}",1.2171,6.216096
-Best Decision Tree ORIGINAL deleted,"{'min_samples_split': 4, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.9683,6.8761449999999975
-Best Decision Tree ORIGINAL mean,"{'min_samples_split': 2, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'friedman_mse'}",0.8465,0.064343
-Best Decision Tree ORIGINAL to_0,"{'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.8218,6.305159
-Best Decision Tree PCA deleted,"{'min_samples_split': 4, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'friedman_mse'}",1.0673,0.094653
-Best Decision Tree PCA mean,"{'min_samples_split': 4, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'mse'}",1.0827,0.128855
-Best Decision Tree PCA to_0,"{'min_samples_split': 8, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'friedman_mse'}",1.0425,0.128049
-Best SVM ORIGINAL deleted,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 10}",1.1129,2.391
-Best SVM ORIGINAL mean,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 10}",1.1093,2.533183
-Best SVM ORIGINAL to_0,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 5, 'estimator__C': 10}",1.1116,2.549548
-Best SVM PCA deleted,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 5, 'estimator__C': 0.1}",0.9062,0.8510979999999999
-Best SVM PCA mean,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 0.1}",0.8953,0.846144
-Best SVM PCA to_0,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 0.1}",0.8877,0.865714
-Best Random Forest ORIGINAL deleted,"{'n_estimators': 50, 'min_samples_split': 8, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.8513,144.45843100000005
-Best Random Forest ORIGINAL mean,"{'n_estimators': 500, 'min_samples_split': 8, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.7236,1419.482376
-Best Random Forest ORIGINAL to_0,"{'n_estimators': 200, 'min_samples_split': 8, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'mae'}",0.7166,756.187842
-Best Random Forest PCA deleted,"{'n_estimators': 500, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.954,1160.0624269999996
-Best Random Forest PCA mean,"{'n_estimators': 200, 'min_samples_split': 6, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'mae'}",0.9663,607.498055
-Best Random Forest PCA to_0,"{'n_estimators': 500, 'min_samples_split': 2, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'mae'}",0.9638,1565.4519990000001
+Best kNN ORIGINAL deleted,"{'p': 1, 'n_neighbors': 11}",0.9322,0.025542
+Best kNN ORIGINAL mean,"{'p': 1, 'n_neighbors': 11}",0.92,0.025826
+Best kNN ORIGINAL to_0,"{'p': 1, 'n_neighbors': 11}",0.89,0.030936
+Best kNN PCA deleted,"{'p': 2, 'n_neighbors': 6}",0.9452,0.00922
+Best kNN PCA mean,"{'p': 2, 'n_neighbors': 6}",0.9381,0.007576999999999999
+Best kNN PCA to_0,"{'p': 2, 'n_neighbors': 11}",0.9166,0.008941
+Best MLP ORIGINAL deleted,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (20, 20, 20), 'batch_size': 1, 'alpha': 5, 'activation': 'logistic'}",1.2016,6.867978
+Best MLP ORIGINAL mean,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 5, 10, 10, 10), 'batch_size': 10, 'alpha': 5, 'activation': 'tanh'}",1.2307,3.933944
+Best MLP ORIGINAL to_0,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 10, 10), 'batch_size': 1, 'alpha': 1, 'activation': 'tanh'}",1.2074,7.912916
+Best MLP PCA deleted,"{'learning_rate_init': 0.01, 'hidden_layer_sizes': (5, 5, 20), 'batch_size': 10, 'alpha': 10, 'activation': 'logistic'}",1.2088,1.477828
+Best MLP PCA mean,"{'learning_rate_init': 0.1, 'hidden_layer_sizes': (10, 10, 10, 10, 10), 'batch_size': 200, 'alpha': 10, 'activation': 'logistic'}",1.2067,0.51575
+Best MLP PCA to_0,"{'learning_rate_init': 0.01, 'hidden_layer_sizes': (10,), 'batch_size': 1, 'alpha': 10, 'activation': 'logistic'}",1.2145,6.786579
+Best Decision Tree ORIGINAL deleted,"{'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.9603,7.102805
+Best Decision Tree ORIGINAL mean,"{'min_samples_split': 4, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'friedman_mse'}",0.8399,0.060142999999999995
+Best Decision Tree ORIGINAL to_0,"{'min_samples_split': 8, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'friedman_mse'}",0.8228,0.064469
+Best Decision Tree PCA deleted,"{'min_samples_split': 4, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",1.0639,9.116394999999999
+Best Decision Tree PCA mean,"{'min_samples_split': 8, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'mse'}",1.0858,0.128591
+Best Decision Tree PCA to_0,"{'min_samples_split': 8, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'friedman_mse'}",1.0494,0.124783
+Best SVM ORIGINAL deleted,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 10}",1.1129,2.403148
+Best SVM ORIGINAL mean,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 10}",1.1093,2.46109
+Best SVM ORIGINAL to_0,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 10}",1.1093,2.528197
+Best SVM PCA deleted,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 0.1}",0.9059,0.8273299999999999
+Best SVM PCA mean,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 0.1}",0.8953,0.8505440000000001
+Best SVM PCA to_0,"{'estimator__kernel': 'poly', 'estimator__gamma': 'scale', 'estimator__epsilon': 10, 'estimator__C': 0.1}",0.8877,0.8622629999999999
+Best Random Forest ORIGINAL deleted,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'criterion': 'mae'}",0.8507,29.891371000000003
+Best Random Forest ORIGINAL mean,"{'n_estimators': 500, 'min_samples_split': 6, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.7222,1409.782484
+Best Random Forest ORIGINAL to_0,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.7041,629.0325889999999
+Best Random Forest PCA deleted,"{'n_estimators': 200, 'min_samples_split': 8, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.9557,449.36287
+Best Random Forest PCA mean,"{'n_estimators': 200, 'min_samples_split': 4, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.9549,508.008882
+Best Random Forest PCA to_0,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.9562,548.5420190000002

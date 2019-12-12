@@ -210,5 +210,5 @@ if __name__ == "__main__":
     param_dict = get_params(algorithm)
 
     #this where the actual searching happens
-    random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=50, jobs=45)
+    random_search_(algorithm, param_dict, X, y, clean_method, preprocessing, iters=100, jobs=45)
    # print("Testing search with job params. Alg: %s, Clean Method: %d, Preprocessing: %d" %(jobs[jobNo][0],jobs[jobNo][1],jobs[jobNo][2]))

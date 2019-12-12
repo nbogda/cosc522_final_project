@@ -1,0 +1,1958 @@
+My SLURM_ARRAY_TASK_ID:  23
+
+You have selected NaN to_0, with ORIGINAL data
+
+Fitting 10 folds for each of 96 candidates, totalling 960 fits
+                                                                           Best Params  ... Refit Time
+Best kNN ORIGINAL deleted                                  {'p': 1, 'n_neighbors': 11}  ...   0.025542
+Best kNN ORIGINAL mean                                     {'p': 1, 'n_neighbors': 11}  ...   0.025826
+Best kNN ORIGINAL to_0                                     {'p': 1, 'n_neighbors': 11}  ...   0.030936
+Best kNN PCA deleted                                        {'p': 2, 'n_neighbors': 6}  ...    0.00922
+Best kNN PCA mean                                           {'p': 2, 'n_neighbors': 6}  ...   0.007577
+Best kNN PCA to_0                                          {'p': 2, 'n_neighbors': 11}  ...   0.008941
+Best MLP ORIGINAL deleted            {'learning_rate_init': 0.001, 'hidden_layer_si...  ...    9.48462
+Best MLP ORIGINAL mean               {'learning_rate_init': 0.001, 'hidden_layer_si...  ...    11.0697
+Best MLP ORIGINAL to_0               {'learning_rate_init': 0.001, 'hidden_layer_si...  ...    5.42584
+Best MLP PCA deleted                 {'learning_rate_init': 0.01, 'hidden_layer_siz...  ...    1.47783
+Best MLP PCA mean                    {'learning_rate_init': 0.1, 'hidden_layer_size...  ...    0.51575
+Best MLP PCA to_0                    {'learning_rate_init': 0.01, 'hidden_layer_siz...  ...    6.78658
+Best Decision Tree ORIGINAL deleted  {'min_samples_split': 2, 'min_samples_leaf': 4...  ...    7.10281
+Best Decision Tree ORIGINAL mean     {'min_samples_split': 4, 'min_samples_leaf': 3...  ...   0.060143
+Best Decision Tree ORIGINAL to_0     {'min_samples_split': 2, 'min_samples_leaf': 4...  ...    6.30516
+Best Decision Tree PCA deleted       {'min_samples_split': 4, 'min_samples_leaf': 4...  ...    9.11639
+Best Decision Tree PCA mean          {'min_samples_split': 8, 'min_samples_leaf': 3...  ...   0.128591
+Best Decision Tree PCA to_0          {'min_samples_split': 8, 'min_samples_leaf': 3...  ...   0.124783
+Best SVM ORIGINAL deleted            {'estimator__kernel': 'poly', 'estimator__gamm...  ...    2.40315
+Best SVM ORIGINAL mean               {'estimator__kernel': 'poly', 'estimator__gamm...  ...    2.46109
+Best SVM ORIGINAL to_0               {'estimator__kernel': 'poly', 'estimator__gamm...  ...   2.528197
+Best SVM PCA deleted                 {'estimator__kernel': 'poly', 'estimator__gamm...  ...    0.82733
+Best SVM PCA mean                    {'estimator__kernel': 'poly', 'estimator__gamm...  ...   0.850544
+Best SVM PCA to_0                    {'estimator__kernel': 'poly', 'estimator__gamm...  ...   0.862263
+Best Random Forest ORIGINAL deleted  {'n_estimators': 50, 'min_samples_split': 8, '...  ...    144.458
+Best Random Forest ORIGINAL mean     {'n_estimators': 500, 'min_samples_split': 8, ...  ...    1419.48
+Best Random Forest ORIGINAL to_0     {'n_estimators': 200, 'min_samples_split': 8, ...  ...    756.188
+Best Random Forest PCA deleted       {'n_estimators': 500, 'min_samples_split': 2, ...  ...    1160.06
+Best Random Forest PCA mean          {'n_estimators': 200, 'min_samples_split': 6, ...  ...    607.498
+Best Random Forest PCA to_0          {'n_estimators': 500, 'min_samples_split': 2, ...  ...    1565.45
+
+[30 rows x 3 columns]
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.8s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   1.8s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.4s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.8s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.8s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=0.1, total=   1.8s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.5s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.8s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=rbf, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.8s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=0.1, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=0.1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=0.1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=0.1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=0.1, total=   1.9s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=1, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=5, estimator__C=1, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=5, estimator__C=1, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=10, estimator__C=1, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=5, total=   2.3s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=1, estimator__C=5, total=   2.4s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=1, estimator__C=5, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=5, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=10, estimator__C=5, total=   2.1s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=0.1, estimator__C=10, total=   2.5s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=0.1, estimator__C=10, total=   2.0s
+[CV] estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=auto, estimator__epsilon=1, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=scale, estimator__epsilon=5, estimator__C=10, total=   2.2s
+[CV] estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=sigmoid, estimator__gamma=scale, estimator__epsilon=10, estimator__C=10, total=   2.3s
+[CV] estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10 
+[CV]  estimator__kernel=poly, estimator__gamma=auto, estimator__epsilon=10, estimator__C=10, total=   2.0s

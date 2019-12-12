@@ -1,0 +1,6 @@
+/home/crizzo/miniconda3/lib/python3.7/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+[Parallel(n_jobs=45)]: Using backend LokyBackend with 45 concurrent workers.
+slurmstepd: error: *** JOB 200951 ON chi3 CANCELLED AT 2019-12-12T13:39:15 ***
+/home/crizzo/miniconda3/lib/python3.7/site-packages/joblib/externals/loky/backend/resource_tracker.py:266: UserWarning: resource_tracker: There appear to be 51 leaked semlock objects to clean up at shutdown
+  (len(rtype_cache), rtype))
