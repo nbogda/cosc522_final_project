@@ -5,12 +5,12 @@ Best kNN ORIGINAL to_0,"{'p': 1, 'n_neighbors': 11}",0.89,0.029016000000000007
 Best kNN PCA deleted,"{'p': 2, 'n_neighbors': 6}",0.9452,0.007349
 Best kNN PCA mean,"{'p': 2, 'n_neighbors': 6}",0.9381,0.007737999999999998
 Best kNN PCA to_0,"{'p': 2, 'n_neighbors': 11}",0.9166,0.007281
-Best MLP ORIGINAL deleted,"{'learning_rate_init': 0.01, 'hidden_layer_sizes': (20, 20, 20, 20, 20), 'batch_size': 10, 'alpha': 0.01}",1.1846,4.58434
-Best MLP ORIGINAL mean,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (20, 20, 20, 20, 20), 'batch_size': 200, 'alpha': 10}",1.2482,0.729548
-Best MLP ORIGINAL to_0,"{'learning_rate_init': 0.01, 'hidden_layer_sizes': (5, 5, 5, 10, 20), 'batch_size': 30, 'alpha': 0.01}",1.2223,1.169426
-Best MLP PCA deleted,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 10, 10, 20, 20), 'batch_size': 10, 'alpha': 1}",1.2402,1.9071
-Best MLP PCA mean,"{'learning_rate_init': 0.01, 'hidden_layer_sizes': (5, 10, 10), 'batch_size': 30, 'alpha': 1}",1.2341,2.2086080000000003
-Best MLP PCA to_0,"{'learning_rate_init': 0.01, 'hidden_layer_sizes': (10, 10, 20), 'batch_size': 30, 'alpha': 5}",1.2164,1.4562190000000002
+Best MLP ORIGINAL deleted,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 5, 5, 5, 5), 'batch_size': 1, 'alpha': 10, 'activation': 'tanh'}",1.2384,9.484617
+Best MLP ORIGINAL mean,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (10, 10, 10, 20, 20), 'batch_size': 1, 'alpha': 1, 'activation': 'logistic'}",1.2538,11.069724
+Best MLP ORIGINAL to_0,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (10, 10, 10), 'batch_size': 10, 'alpha': 10, 'activation': 'logistic'}",1.2369,5.425845
+Best MLP PCA deleted,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5,), 'batch_size': 30, 'alpha': 10, 'activation': 'logistic'}",1.2412,0.461942
+Best MLP PCA mean,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 5, 20, 20, 20), 'batch_size': 200, 'alpha': 10, 'activation': 'tanh'}",1.2523,0.38512399999999997
+Best MLP PCA to_0,"{'learning_rate_init': 0.001, 'hidden_layer_sizes': (5, 10, 10, 10, 10), 'batch_size': 1, 'alpha': 1, 'activation': 'logistic'}",1.2171,6.216096
 Best Decision Tree ORIGINAL deleted,"{'min_samples_split': 4, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.9683,6.8761449999999975
 Best Decision Tree ORIGINAL mean,"{'min_samples_split': 2, 'min_samples_leaf': 3, 'max_features': 'auto', 'criterion': 'friedman_mse'}",0.8465,0.064343
 Best Decision Tree ORIGINAL to_0,"{'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'auto', 'criterion': 'mae'}",0.8218,6.305159

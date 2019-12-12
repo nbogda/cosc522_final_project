@@ -3,7 +3,7 @@
 #SBATCH --job-name=finalProject
 #SBATCH --output=finalProject_%A_%a.out
 #SBATCH --error=finalProject_%A_%a.err
-#SBATCH --array=1-30
+#SBATCH --array=7-12
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=45
 
