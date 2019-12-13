@@ -12,7 +12,7 @@ import time
 
 
 #graphs to visualize data from the random search
-def generate_rs_graphs(metric, rf=True, pd=True):
+def generate_rs_graphs(metric, rf=True):
     '''
     metric : string
              Mean RMSLE or Refit Time
@@ -70,7 +70,7 @@ def generate_rs_graphs(metric, rf=True, pd=True):
     plt.savefig("graphs/random_search_best_alg_%s.png" % title)
 
 #graphs to visualize data from the random search
-def generate_model_graphs(metric):
+def generate_model_graphs(metric, lr=True):
     '''
     metric : string
              Mean RMSLE or Prediction Time
@@ -78,6 +78,8 @@ def generate_model_graphs(metric):
     graph_info = pd.read_csv("graphs/Best_Model_Info.csv", index_col=0)
    
     algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest", "linearRegression"]
+    if not lr:
+        algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest"]
     N = len(algorithms)
 
     #peter prefenhoffer
@@ -88,6 +90,8 @@ def generate_model_graphs(metric):
     for index, row in graph_info.iterrows():
         #regex search for algorithm name in pandas file
         name = re.search("Best (.*) [^\s]+ [^\s]+", row.name).group(1)
+        if name == "linearRegression" and not lr:
+            continue
         #add data to appropriate index
         bv_index = algorithms.index(name)
         if bar_values[bv_index] is None:
@@ -110,15 +114,21 @@ def generate_model_graphs(metric):
     ax.set_ylabel(metric, fontsize=14)
     ax.set_xticks((ind + width*2.5))
     ax.tick_params(labelsize=14, length=6, width=2)
-    algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest", "Linear Regression"]
+    if lr:
+        algorithms = ["kNN", "MLP", "Decision Tree", "SVM", "Random Forest", "Linear Regression"]
     ax.set_xticklabels(algorithms)
     legend1 = ax.legend((og_del[0], og_mean[0], og_0[0], pca_del[0], pca_mean[0], pca_0[0]), 
               ("Original NaN Deleted", "Original Mean Impute", "Original 0 Impute", "PCA NaN Deleted", "PCA Mean Impute", "PCA 0 Impute"),
               ncol=2, fontsize='large')
-    #line = plt.axhline(y=top_score, linestyle="--")
-    #ax.legend([line], ["Top Kaggle Score"], fontsize='large', loc=(0.001, 0.82))
+    line = plt.axhline(y=top_score, linestyle="--")
+    loc_ = (0.001, 0.82)
+    if not lr:
+        loc_ = (0.86, 0.82)
+    ax.legend([line], ["Top Kaggle Score"], fontsize='large', loc=loc_)
     plt.gca().add_artist(legend1)
     title = "Prediction Performance" if metric == "Mean RMSLE" else "Prediction Time"
+    if not lr:
+        title += "without Linear Regression"
     ax.set_title("Test Set Best Algorithm %s" % title, fontsize=14)
     plt.savefig("graphs/test_set_best_alg_%s" % title)
     
@@ -191,12 +201,12 @@ def test_best_algs():
 if __name__ == "__main__":
 
     #Mean RMSLE or Refit Time
-    #metric = "Refit Time"
+    #metric = "Mean RMSLE"
     
-    #generate_rs_graphs(metric, rf=False)
-    test_best_algs()
+    #generate_rs_graphs(metric)
+    #test_best_algs()
 
     #Mean RMSLE or Prediction Time
-    #metric = "Prediction Time"
-    #generate_model_graphs(metric)
+    metric = "Mean RMSLE"
+    generate_model_graphs(metric, lr=False)
 
