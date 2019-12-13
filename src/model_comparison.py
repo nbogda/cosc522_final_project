@@ -194,9 +194,9 @@ if __name__ == "__main__":
     #metric = "Refit Time"
     
     #generate_rs_graphs(metric, rf=False)
-    #test_best_algs()
+    test_best_algs()
 
     #Mean RMSLE or Prediction Time
-    metric = "Prediction Time"
-    generate_model_graphs(metric)
+    #metric = "Prediction Time"
+    #generate_model_graphs(metric)
 
