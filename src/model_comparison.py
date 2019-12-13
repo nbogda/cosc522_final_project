@@ -128,7 +128,7 @@ def generate_model_graphs(metric, lr=True):
     plt.gca().add_artist(legend1)
     title = "Prediction Performance" if metric == "Mean RMSLE" else "Prediction Time"
     if not lr:
-        title += "without Linear Regression"
+        title += " without Linear Regression"
     ax.set_title("Test Set Best Algorithm %s" % title, fontsize=14)
     plt.savefig("graphs/test_set_best_alg_%s" % title)
     
